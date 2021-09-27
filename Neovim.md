@@ -7,7 +7,8 @@ public: true
 
 # Neovim
 
-[[vim]]-based text-editor
+- [[vim]]-based text-editor
+- Since 0.5 version it is configurable by using [[Lua]] programming language
 
 ## Links
 
