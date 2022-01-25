@@ -27,5 +27,11 @@ sed -i 's/old-word/new-word/g' *.md
 sed -i '' -e 's/..\/src\/components/..\/components/g' *.mdx
 ```
 
+### sed: content: in-place editing only works for regular files
+
+```bash
+sed -i '' -e "s/oldstr/newstr/g"  `find .* -type f -maxdepth 0 -print`
+```
+
 
 
