@@ -6,8 +6,8 @@ tags: ["empty"]
 keywords: ["empty"]
 type: "post"
 public: false
-imageCopyright: Max
-imageCopyrightUrl: https://kowalevski.com
+imageCopyright: byteski
+imageCopyrightUrl: https://byteski.net
 ---
 
 # empty

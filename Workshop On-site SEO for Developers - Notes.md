@@ -40,7 +40,7 @@ Googlebot:
 
 - Canonical urls should be on your website
 - Need to add canonical url to post's page and **all pages like /blog**
-	- `<link rel="canonical" href="https://kowalevski.com/blog" data-react-helmet="true">`
+	- `<link rel="canonical" href="https://byteski.net/blog" data-react-helmet="true">`
 
 ### Performance in SEO
 
@@ -52,7 +52,7 @@ Googlebot:
 
 - SEO-friendly url
 	- of course, **https**
-	- avoid subdomain (blog.kowalevski.com)
+	- avoid subdomain (blog.byteski.net)
 	- subdirectory
 	- slug
 		- **short** and **sweet**

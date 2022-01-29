@@ -17,7 +17,7 @@ A static-site generator written in [[Golang]].
 
 ## Resources
 
-- [kowalevski/hugo-blog-sample](https://github.com/kowalevski/hugo-blog-sample)
+- [byteski/hugo-blog-sample](https://github.com/byteski/hugo-blog-sample)
 
 ## Installing
 

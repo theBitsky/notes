@@ -5,7 +5,7 @@ key: "about"
 
 # About me
 
-### I'm Max Kowalevski, a software developer.
+### I'm Byteski, a software developer.
 
 ![photo](Images/avatar.jpg)
 
@@ -21,18 +21,16 @@ Besides programming stuff, I like writing itself, reading weird articles, mechan
 
 I find the way of learn in public is quite useful so here is my [Digital Garden](/notes).
 
-If you wanna just chat with me - feel free to email me at [me@kowalevski.com](mailto:me@kowalevski.com).
+If you wanna just chat with me - feel free to email me at [me@byteski.net](mailto:me@byteski.net).
 
 ### My links
 
-- [GitHub](https://github.com/kowalevski)
-- [Twitter](https://twitter.com/mxkwl)
-- [Reddit](https://www.reddit.com/user/kowalevski)
-- [Dev.to](https://dev.to/kowalevski)
-- [Medium](https://medium.com/@kowalevski)
-- [Hacker Noon](https://hackernoon.com/u/mxkvl)
-- [Stack Overflow](https://stackoverflow.com/users/10805030/kowalevski)
-- [HN](https://news.ycombinator.com/user?id=kowalevski)
-- [Patreon](https://www.patreon.com/kowalevski)
-- [Open Collective](https://opencollective.com/kowalevski)
-- [IndieHackers](https://www.indiehackers.com/mxkvl)
+- [GitHub](https://github.com/byteski)
+- [Twitter](https://twitter.com/byteski)
+- [Reddit](https://www.reddit.com/user/thebyteski)
+- [Dev.to](https://dev.to/byteski)
+- [HN](https://news.ycombinator.com/user?id=byteski)
+- [Patreon](https://www.patreon.com/byteski)
+- [Open Collective](https://opencollective.com/byteski)
+- [IndieHackers](https://www.indiehackers.com/byteski)
+

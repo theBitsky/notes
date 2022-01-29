@@ -2,7 +2,7 @@
 tags: ['site']
 ---
 
-My name is Max, also known as @mxkvl.
+Hello there! I am Byteski.
 
 I am a software developer, currently working mostly with TypeScript, React and Node ecosystems.
 

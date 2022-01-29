@@ -1,5 +1,11 @@
 # Terminal Workflow
 
+## utilities
+
+- imgcat
+  - shows images in terminal
+
+
 ## fzf and vim
 
 to search file and open it in vim:

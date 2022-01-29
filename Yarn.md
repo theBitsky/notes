@@ -24,7 +24,7 @@ Yarn provide a solution to manage [[Monorepo]] - Yarn Workspaces
 
 -----
 
-- Source: [yarn-workspaces-sample (GitHub)](https://github.com/kowalevski/yarn-workspaces-sample)
+- Source: [yarn-workspaces-sample (GitHub)](https://github.com/byteski/yarn-workspaces-sample)
 
 -----
 
@@ -75,7 +75,7 @@ cd ../server && touch main.js
 
 const { greeting } = require('utils');
 
-greeting('Max');
+greeting('byte');
 
 ```
 
