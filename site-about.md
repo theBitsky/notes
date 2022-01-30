@@ -21,7 +21,7 @@ Besides programming stuff, I like writing itself, reading weird articles, mechan
 
 I find the way of learn in public is quite useful so here is my [Digital Garden](/notes).
 
-If you wanna just chat with me - feel free to email me at [me@byteski.net](mailto:me@byteski.net).
+If you wanna just chat with me - feel free to email me at [me@byte.ski](mailto:me@byte.ski).
 
 ### My links
 

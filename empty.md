@@ -9,7 +9,7 @@ image: "https://source.unsplash.com/random"
 tags: []
 keywords: []
 imageCopyright: Byteski
-imageCopyrightUrl: https://byteski.net
+imageCopyrightUrl: https://byte.ski
 ---
 
 # empty

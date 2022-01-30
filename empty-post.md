@@ -7,7 +7,7 @@ keywords: ["empty"]
 type: "post"
 public: false
 imageCopyright: byteski
-imageCopyrightUrl: https://byteski.net
+imageCopyrightUrl: https://byte.ski
 ---
 
 # empty

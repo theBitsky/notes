@@ -8,7 +8,7 @@ keywords: ["empty"]
 type: "blog"
 public: false
 imageCopyright: Byteski
-imageCopyrightUrl: https://byteski.net
+imageCopyrightUrl: https://byte.ski
 ---
 
 # empty
