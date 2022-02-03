@@ -1,6 +1,6 @@
 ------
 - date: 2021-07-22 02:14
-- tags: #seo #monicalent #blogging #bloggingfordevs
+- tags: ['seo', 'monicalent', 'blogging', 'bloggingfordevs']
 -----
 
 # Workshop On-site SEO for Developers - Notes
