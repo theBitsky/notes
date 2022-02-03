@@ -1,6 +1,6 @@
 ------
-- date: 2021-08-17 15:39
-- tags: ['idea']
+date: 2021-08-17 15:39
+tags: ['idea']
 -----
 
 # Idea - UI library for code snippets to show arrows and annotations

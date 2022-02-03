@@ -1,6 +1,7 @@
 ------
-- date: 2021-07-18 02:05
-- tags: #microsoft 
+date: 2021-07-18 02:05
+tags: ['microsoft']
+public: true
 -----
 
 # Microsoft MVP
