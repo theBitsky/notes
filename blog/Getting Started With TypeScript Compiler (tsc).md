@@ -11,13 +11,11 @@ type: "blog"
 public: true
 ---
 
-import { SubscribingBlock, TsAnthologyBookBanner } from "../components";
 
 From the previous post [TypeScript - What Is All About And Why Should You Use It?](https://byte.ski/blog/article/typescript-what-is-all-about-and-why-should-you-use-it) we know that TypeScript is a superset of JavaScript and programming language. But how can you use it? If you worked with JavaScript in Front End you know that your code is executing by [[Web browser]]. In Back End, your code is running by [[Node]]. What about TypeScript?
 
 The thing is that TypeScript is provided with a special program, tool - compiler. A compiler is a program that compiles (transforms) one code to another.
 
-<TsAnthologyBookBanner convertkitEndpoint={props.convertkitEndpoint} />
 
 ## What is TypeScript compiler?
 
@@ -168,7 +166,6 @@ exports.greeting = greeting;
 
 No code uses ECMAScript modules! In **createQuestioner.js** on line 20 the function _createQuestioner_ is exporting by using CommonJS `exports.greeting = greeting;`. The same in **greeting.js**: on line 7 you will see the code `exports.greeting = greeting;` which is CommonJS.
 
-<SubscribingBlock convertkitEndpoint={props.convertkitEndpoint} />
 
 Okay, the exporting is sorted out. What about importing modules?
 

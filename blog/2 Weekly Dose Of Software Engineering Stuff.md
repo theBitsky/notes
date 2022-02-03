@@ -22,11 +22,9 @@ public: true
 excerpt: "Hello there! Here is a second edition of the newsletter _Weekly Dose Of Software Engineering Stuff_."
 ---
 
-import { SubscribingBlock } from "../components";
 
 > ❗️✉️ This post is a public version of the newsletter edition that was published 2 days ago. Sign up to [**Weekly Dose Of Software Engineering Stuff**](https://byte.ski/newsletter) to be among the first to receive the newsletter.
 
-<SubscribingBlock convertkitEndpoint={props.convertkitEndpoint} />
 
 Hello there!
 

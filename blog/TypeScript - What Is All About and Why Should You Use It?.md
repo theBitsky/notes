@@ -11,13 +11,11 @@ type: "blog"
 public: true
 ---
 
-import { SubscribingBlock, TsAnthologyBookBanner } from "../components";
 
 ## What is TypeScript?
 
 **TypeScript** is a [[JavaScript]] Superset. It means that [[TypeScript]] is a language that is built upon JavaScript. It is based on JavaScript syntax, constructions, advantages (and disadvantages) but it also brings new features, syntax, and capabilities.
 
-<TsAnthologyBookBanner convertkitEndpoint={props.convertkitEndpoint} />
 
 What's the purpose of this language? TypeScript brings to developers some features that help to write code on [[JavaScript]] easier and safer. One of the most important features that TypeScript provides is [[Static typing]]. Basically, static typing allows us to make fewer mistakes with data types. For example, you can't put some value as an argument of the function if this value doesn't have the same type as the parameter. This is very basic stuff but [[TypeScript]] has also more powerful features that we will find out in the next posts of this series.
 
@@ -151,7 +149,6 @@ The error is still in the code but I see it in my editor (VSCode):
 
 We added a few new constructions that help us to find mistakes before running the code. The most important thing here is on line 3 - **interface**. Let's just say that it is something like an object that contains information about the types of each country object's fields. We will get to that later in the next posts of this series.
 
-<SubscribingBlock convertkitEndpoint={props.convertkitEndpoint} />
 
 ## TypeScript is already here
 

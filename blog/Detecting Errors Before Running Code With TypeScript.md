@@ -11,7 +11,6 @@ type: "blog"
 public: true
 ---
 
-import { SubscribingBlock, TsAnthologyBookBanner } from "../components";
 
 ## The problem
 
@@ -19,7 +18,6 @@ In the [previous post](https://byte.ski/blog/article/typescript-what-is-all-abou
 
 We need to know how to start using [[TypeScript]] in our [[JavaScript]] project. In examples of this post series, I will use mostly code that written in [[Node]] environment. It won't be any specific code that is understandable for only developers who worked with [[Node]] before. Because this material is about TypeScript I want to specify more on TypeScript itself.
 
-<TsAnthologyBookBanner convertkitEndpoint={props.convertkitEndpoint} />
 
 Okay, let's start with an introduction to our first example. Here we have a very simple command-line application that works on [[Node]]. This example consists of one file. Let name it **sum.js**. When we execute this file by Node it will ask two questions in the Terminal - a value of argument X and Y. After typing these values the app will print the result of _X + Y_.
 
@@ -143,7 +141,6 @@ Oops! After running this command we will see that our code cannot be compiled be
 
 And **there is a thing**. TypeScript won't allow you to compile the code that contains errors.
 
-<SubscribingBlock convertkitEndpoint={props.convertkitEndpoint} />
 
 ### Fixing the code
 

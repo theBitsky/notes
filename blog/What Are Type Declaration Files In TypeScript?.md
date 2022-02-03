@@ -11,11 +11,9 @@ type: "blog"
 public: true
 ---
 
-import { SubscribingBlock, TsAnthologyBookBanner } from "../components";
 
 You probably have seen files with a file extension like _.d.ts_ in some JavaScript or TypeScript projects (libraries or frameworks) before and you wondered what are these files and what they are for. In TypeScript they are called Type Declaration files. Let's find out what is that practically.
 
-<TsAnthologyBookBanner convertkitEndpoint={props.convertkitEndpoint} />
 
 Let's create a simple example with TypeScript code. Create a folder with the name **typescript-type-defs** or whatever name you want and then let's create a file called **users-list.ts** there with code:
 
@@ -77,7 +75,6 @@ export interface User {
 
 You can import this interface from module **users-list** in another module. However, sometimes we need to use this interface as a common thing between several modules. So, _exporting_ interface from one of these modules is not an option. We need to create a special file where we can specify Interface User and use it in modules.
 
-<SubscribingBlock convertkitEndpoint={props.convertkitEndpoint} />
 
 Create a file with name **typings.d.ts** and moved interface User from file **users-list.ts** into this new file:
 
