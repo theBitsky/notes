@@ -1,5 +1,6 @@
 ---
 slug: "setup-simple-workflow-to-write-node-typeScript-application-in-live-reload"
+aliases: ["/blog/article/setup-simple-workflow-to-write-node-typeScript-application-in-live-reload"]
 date: "2021-05-12 22:10:00"
 image: "Images/setup-simple-workflow-to-write-node-typeScript-application-in-live-reload.png"
 imageCopyright: Negative Space

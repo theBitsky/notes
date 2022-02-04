@@ -1,6 +1,7 @@
 ---
 slug: "2-weekly-newsletter"
-date: "2021-08-06 12:00"
+aliases: ["/blog/article/2-weekly-newsletter"]
+date: "2021-08-06 12:00:00"
 created_date: "2021-07-28 13:06"
 publish_date: "2021-08-04"
 image: "Images/2-weekly-newsletter.png"

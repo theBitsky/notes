@@ -1,5 +1,6 @@
 ---
 slug: "what-is-strict-mode-in-typescript-and-why-and-when-you-should-use-it"
+aliases: ["/blog/article/what-is-strict-mode-in-typescript-and-why-and-when-you-should-use-it"]
 title: "What Is Strict Mode In TypeScript, Why And When You Should Use It?"
 tags: ["javascript", "typescript", "typescriptbook"]
 date: "2021-07-16 04:00:00"
