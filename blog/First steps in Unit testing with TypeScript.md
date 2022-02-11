@@ -2,7 +2,7 @@
 slug: "first-steps-in-unit-testing"
 aliases: ["/blog/article/first-steps-in-unit-testing"]
 date: "2021-04-18 23:00:00"
-image: "../Images/unit-testing-thumbnail.png"
+image: "/Images/unit-testing-thumbnail.png"
 imageCopyright: Scott Webb
 imageCopyrightUrl: https://www.pexels.com/@scottwebb
 title: "First Steps in Unit Testing with TypeScript"
