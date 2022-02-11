@@ -1,6 +1,6 @@
 ---
-tags: ['site']
 title: 'My Digital Garden'
+type: "page"
 ---
 
 # Welcome to my Digital Garden!
@@ -14,3 +14,4 @@ I take notes following [[Zettelkasten method]] and I use [[Obsidian]] app for th
 You can start navigating my [[Digital Garden]] here:
 
 - [[home]]
+

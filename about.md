@@ -1,13 +1,14 @@
 ---
-tags: ["site"]
 key: "about"
+type: "page"
+title: "About me"
 ---
 
 # About me
 
 ### I'm Byteski, a software developer.
 
-![photo](Images/avatar.jpg)
+![photo](/Images/avatar.jpg)
 
 This is my website - the place where I share information and knowledge about topics that interest me with everyone and myself.
 
