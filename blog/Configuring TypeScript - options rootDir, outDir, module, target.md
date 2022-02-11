@@ -2,7 +2,7 @@
 slug: "configuring-typescript-options-rootdir-outdir-module-target"
 aliases: ["/blog/article/configuring-typescript-options-rootdir-outdir-module-target"]
 date: "2021-05-18 20:00:00"
-image: "Images/configuring-typescript-options-rootdir-outdir-module-target.png"
+image: "../Images/configuring-typescript-options-rootdir-outdir-module-target.png"
 imageCopyright: Pixabay
 imageCopyrightUrl: https://www.pexels.com/@pixabay
 title: "Configuring TypeScript: options rootDir, outDir, module, target"

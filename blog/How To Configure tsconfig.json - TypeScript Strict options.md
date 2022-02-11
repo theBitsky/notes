@@ -2,7 +2,7 @@
 slug: "how-to-configure-tsconfigjson-typescript-strict-options"
 aliases: ["/blog/article/how-to-configure-tsconfigjson-typescript-strict-options"]
 date: "2021-07-29 17:00:00"
-image: "Images/how-to-configure-tsconfigjson-typescript-strict-options.jpeg"
+image: "../Images/how-to-configure-tsconfigjson-typescript-strict-options.jpeg"
 title: "How To Configure tsconfig.json: TypeScript Strict options"
 tags: ["typescript", "typescriptbook"]
 keywords:
