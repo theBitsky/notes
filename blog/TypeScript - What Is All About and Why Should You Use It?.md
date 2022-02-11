@@ -146,7 +146,7 @@ printCountries(countries);
 
 The error is still in the code but I see it in my editor (VSCode):
 
-![](Images/example-countries-ts.png)
+![](/Images/example-countries-ts.png)
 
 We added a few new constructions that help us to find mistakes before running the code. The most important thing here is on line 3 - **interface**. Let's just say that it is something like an object that contains information about the types of each country object's fields. We will get to that later in the next posts of this series.
 
@@ -197,7 +197,7 @@ printCountries(contries);
 
 And now we see the error in JavaScript file that doesn't have any types or other constructions that are specific for [[TypeScript]]:
 
-![](Images/example-countries-ts-check.png)
+![](/Images/example-countries-ts-check.png)
 
 ## TypeScript Advantages
 

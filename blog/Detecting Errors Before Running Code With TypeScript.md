@@ -124,7 +124,7 @@ Alright. To solve the problem we need to write the same code as before but in Ty
 
 We just renamed our file but there are already some changes in the editor (I use [[Visual Studio Code]]):
 
-![TypeScript code in VSCode](Images/typescript-first-using-screen-1.png)
+![TypeScript code in VSCode](/Images/typescript-first-using-screen-1.png)
 
 We have several lines with red underlining which means that there are TypeScript errors. There are also two dashed borders on line 11 - TypeScript warnings. But, why don't we just ignore all this stuff and execute our code? Let's try it.
 
@@ -138,7 +138,7 @@ tsc sum.ts
 
 Oops! After running this command we will see that our code cannot be compiled because of the errors that were marked in the editor.
 
-![TypeScript Compiler shows errors](Images/typescript-first-using-screen-2.png)
+![TypeScript Compiler shows errors](/Images/typescript-first-using-screen-2.png)
 
 And **there is a thing**. TypeScript won't allow you to compile the code that contains errors.
 
@@ -209,7 +209,7 @@ const question = (message): string => {
 
 Hmm. We specified the type of returned value, but TypeScript shows that there is an error:
 
-![](Images/typescript-first-using-screen-3.png)
+![](/Images/typescript-first-using-screen-3.png)
 
 An error sounds like this:
 
@@ -245,7 +245,7 @@ function sum(a: number, b: number) {
 
 Let's look at the function _main_ where functions _question_ and _sum_ are calling:
 
-![An error in the code](Images/typescript-first-using-screen-4.png)
+![An error in the code](/Images/typescript-first-using-screen-4.png)
 
 **This is it!**. This is the error that helps us to fix the bug with the wrong result that prints in the Terminal. Now, if we would try to compile file **sum.ts** we will see the error.
 
@@ -257,7 +257,7 @@ tsc sum.ts && node sum.js
 
 We will see:
 
-![The error in executing the program](Images/typescript-first-using-screen-5.png)
+![The error in executing the program](/Images/typescript-first-using-screen-5.png)
 
 All we have to do is to write a code that _converts_ values from string type to number:
 
@@ -282,7 +282,7 @@ async function main() {
 
 Let's see the result of executing our program:
 
-![](Images/typescript-first-using-screen-6.png)
+![](/Images/typescript-first-using-screen-6.png)
 
 **Congratulations!** You solve the problem and prevent the bug by using TypeScript!
 
