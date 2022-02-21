@@ -13,5 +13,11 @@ public: false
   - [[IndieWeb]] contributor
 - [ilya-sher.org](https://ilya-sher.org/)
   - [Next Generation Shell](https://ngs-lang.org) author's blog
+- [jvt.me](https://www.jvt.me)
+  - IndieWeber
+- [monicalent.com](https://monicalent.com)
+  - Monica Lent's blog. Author of Blogging For Devs
+- [notanomadblog.com](https://notanomadblog.com)
+  - Monica Lent's travel blog
 
 

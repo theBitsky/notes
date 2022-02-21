@@ -21,6 +21,7 @@ public: true
 
 - interesting
 	- [formatter.nvim](https://github.com/mhartington/formatter.nvim)
+- [hologram.nvim](https://github.com/edluffy/hologram.nvim)
 
 ### colorschemes
 
