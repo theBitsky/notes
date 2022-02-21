@@ -2,7 +2,7 @@
 title: Interesting personal websites and blogs
 tags: ['website', 'blogs']
 date: '2022-02-10'
-public: true
+public: false
 ---
 
 # Interesting personal websites and blogs 
