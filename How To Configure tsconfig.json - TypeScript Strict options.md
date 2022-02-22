@@ -24,11 +24,9 @@ type: "blog"
 public: true
 ---
 
-import { SubscribingBlock, TsAnthologyBookBanner } from "../components";
 
 TypeScript is not just a superset of JavaScript with static types. It is also a quite configurable tool that can be used for different types of projects. One parameter or group of parameters that can be configured is **strict**. If you are not familiar with strict mode and why you should use it for a new project then check out the post [What Is Strict Mode In TypeScript, Why And When You Should Use It?](https://byte.ski/blog/article/what-is-strict-mode-in-typescript-and-why-and-when-you-should-use-it). In this post I focus more on a practical side of this topic.
 
-<TsAnthologyBookBanner convertkitEndpoint={props.convertkitEndpoint} />
 
 TypeScript's strict mode parameter can be configurated as several individual parameters for each specific case of type checking. So, basically, if you set the parameter **strict** to _true_ in **tsconfig.json** it means that all these strict options are set to _true_.
 
@@ -375,7 +373,6 @@ _I recommend not use **exclamation mark** very often because it can expand the c
 
 The next option is not so useful nowadays since we don't need to use **bind()** and related methods much often in modern JavaScript. But anyway, if you need to use bind(), call(), or apply() then this option might be useful for you.
 
-<SubscribingBlock convertkitEndpoint={props.convertkitEndpoint} />
 
 The example is unusual but you may come across this in existing projects with an old version of ECMAScript (where arrow functions are not available or their support is disabled for some reason). This function creates an object of a non-player character. You can start the dialog with this character (in our example it starts automatically after running the app) but the character is busy right now so it answers later (after 2 sec):
 

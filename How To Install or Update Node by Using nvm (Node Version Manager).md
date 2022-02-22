@@ -11,7 +11,6 @@ type: "blog"
 public: true
 ---
 
-import { SubscribingBlock } from "../components";
 
 ## Intro
 
@@ -87,7 +86,6 @@ stable -> 16.1 (-> v16.1.0) (default)
 ...
 ```
 
-<SubscribingBlock convertkitEndpoint={props.convertkitEndpoint} />
 
 Pay attention to the symbol "->". It shows us which version of Node is current on the local machine. So, basically, when you type `node -v` you should see the same version as with "->" before (in that case this version is 16.1.0).
 

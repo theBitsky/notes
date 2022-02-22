@@ -11,11 +11,9 @@ type: "blog"
 public: true
 ---
 
-import { SubscribingBlock, TsAnthologyBookBanner } from "../components";
 
 In this post, we will learn how to set up a Node project with TypeScript. It is not based on any framework or library like Fastify, Express, Nest, etc. Let's say you wanna build just a command-line application by using TypeScript and Node.
 
-<TsAnthologyBookBanner convertkitEndpoint={props.convertkitEndpoint} />
 
 First of all, you need to install TypeScript on your computer. Install it by [[npm]] or [[Yarn]] globally.
 
@@ -99,7 +97,6 @@ tsc main.ts -w
 
 So now TypeScript compiler automatically compiles **main.ts** into JavaScript code. But what about executing this? Well, TypeScript can't execute the code, only compile it.
 
-<SubscribingBlock convertkitEndpoint={props.convertkitEndpoint} />
 
 We can set up the project to automate our development process. Let's start with TypeScript configuration. We need to create TypeScript configuration file in our project. We can use a special command that generates a configuration file with default settings:
 

@@ -22,7 +22,6 @@ type: "blog"
 public: true
 ---
 
-import { SubscribingBlock } from "../components";
 
 Unit testing is one of the greatest ways to write effective code. In this article, I want to introduce you to what is this type of testing exactly and some basic terms of the Unit testing world.
 
@@ -164,7 +163,6 @@ Alright, because we know about a few types of testing, let's discuss _Why should
 - Unit tests can show us where exactly the error occurred. End-to-End tests check an application as a whole system and you may not understand which part of the system contains the error.
 - Because you write Unit tests for specific units like modules, functions, classes, components - you are mentally closer to the code. It's more understandable for you as a developer because you interact with the same concepts as in the code.
 
-<SubscribingBlock convertkitEndpoint={props.convertkitEndpoint} />
 
 ## Structure of Unit test
 

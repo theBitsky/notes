@@ -11,11 +11,9 @@ type: "blog"
 public: true
 ---
 
-import { SubscribingBlock, TsAnthologyBookBanner } from "../components";
 
 There are many options and parameters that can be used in the TypeScript configuration. One of the important "groups" of options is strict options. These options provide us the ability to write the safest code. How? Because TypeScript was developed primarily as **superset of JavaScript**, by default it allows us to write code that is not super strict in types and other aspects. It was made like this because TypeScript should be easily used by JavaScript developers. JavaScript doesn't have static types and is more flexible in some aspects of programming. It has many features to write code _faster_ and _easier_ (at first). However, the other side of this is that you probably will have more places where your code is unsafe. It means that the count of cases where your program will fall is big. TypeScript partially solves this problem.
 
-<TsAnthologyBookBanner convertkitEndpoint={props.convertkitEndpoint} />
 
 ## What Is Strict Mode?
 
@@ -107,7 +105,6 @@ npm run dev
 
 After typing a name (it can be whatever name you want) you should see that there are errors in our code. But they were identified only after running **Node**, i.e. in runtime. So, the TypeScript compiler didn't find any problems in the code.
 
-<SubscribingBlock convertkitEndpoint={props.convertkitEndpoint} />
 
 Now, let's enable **strict mode** and see what happens. After enabling **strict** parameter in **tsconfig.json** you should see errors in your editor (if it supports TypeScript):
 
