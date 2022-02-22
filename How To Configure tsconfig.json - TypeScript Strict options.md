@@ -49,7 +49,7 @@ This option was introduced in [TypeScript 4.4](https://devblogs.microsoft.com/ty
 
 The problem is that when we use construction **try catch** the type of variable **error** in _catch_ is **any**:
 
-![](Images/strict-typescript-screen-1.png)
+![](/Images/strict-typescript-screen-1.png)
 
 It increases the potential risk of errors and application malfunction. The option **useUnknownInCatchVariables** solves this problem.
 
@@ -64,7 +64,7 @@ If you set option **useUnknownInCatchVariables** to `true` then variable **error
 }
 ```
 
-![](Images/strict-typescript-screen-2.png)
+![](/Images/strict-typescript-screen-2.png)
 
 You can also use type **Error** for error variable:
 
