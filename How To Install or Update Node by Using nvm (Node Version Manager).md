@@ -1,5 +1,6 @@
 ---
 slug: "how-to-install-or-update-node-by-using-nvm"
+aliases: ['/blog/article/how-to-install-or-update-node-by-using-nvm']
 date: "2021-05-09 21:00:00"
 image: "Images/how-to-install-or-update-node-by-using-nvm.png"
 imageCopyright: Lucky
