@@ -1,8 +1,9 @@
 ---
-title: 'Static typing'
-tags: ['programming']
+title: Static typing
+tags:
+  - programming
 public: true
-date: '2020-12-06'
+date: 2020-12-06
 ---
 
 # Static typing
@@ -11,6 +12,5 @@ date: '2020-12-06'
 
 ### Examples of programming languages that have static typing
 
-- [[TypeScript]]
-- [[Golang]]
-
+* [TypeScript](TypeScript.md)
+* [Golang](Golang.md)

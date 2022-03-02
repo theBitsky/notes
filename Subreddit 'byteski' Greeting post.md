@@ -1,10 +1,11 @@
 ---
 title: "Subreddit 'byteski' Greeting post"
-tags: ['reddit']
+tags:
+  - reddit
 public: false
 ---
 
-# Subreddit 'byteski' Greeting post 
+# Subreddit 'byteski' Greeting post
 
 Hello! Welcome to my subreddit. 
 
@@ -19,4 +20,3 @@ Now I am in the process of re-design and re-writing my personal website. The fir
 As an announcement here is the screenshot of new version of the website. 
 
 Stay in touch!
-

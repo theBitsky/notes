@@ -1,13 +1,13 @@
 ---
-title: 'Substack'
-tags: ['services']
+title: Substack
+tags:
+  - services
 public: true
-date: '2020-12-08'
+date: 2020-12-08
 ---
 
-# Substack 
+# Substack
 
-[Link]( https://substack.com/)
+[Link](https://substack.com/)
 
-It is a new service that seems like Twitter and Patreon with email subscription for me 
-
+It is a new service that seems like Twitter and Patreon with email subscription for me

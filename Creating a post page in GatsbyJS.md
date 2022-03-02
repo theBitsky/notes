@@ -1,8 +1,10 @@
 ---
 title: "Creating a post's page in GatsbyJS"
-tags: ['gatsbyjs', 'javascript']
+tags:
+  - gatsbyjs
+  - javascript
 public: true
-date: '2020-12-17'
+date: 2020-12-17
 ---
 
 # Creating a post's page in GatsbyJS
@@ -11,7 +13,7 @@ date: '2020-12-17'
 
 Create a component for post page (temporary with basic jsx w/o any data)
 
-```tsx
+````tsx
 import React from "react"
 
 import Layout from "./Layout"
@@ -25,13 +27,13 @@ const PostLayout = () => {
 }
 
 export default PostLayout
-```
+````
 
 ## gatsby-node.ts
 
-In **gatsby-node.ts** you should use **createPages** [[GatsbyJS]] method and set path to this component
+In **gatsby-node.ts** you should use **createPages** [GatsbyJS](GatsbyJS.md) method and set path to this component
 
-```ts
+````ts
 import { GatsbyNode } from "gatsby"
 import path from "path"
 import { AllMarkdownRemark } from "./src/types"
@@ -77,13 +79,13 @@ const createPages: GatsbyNode["createPages"] = async ({ graphql, actions }) => {
 }
 
 exports.createPages = createPages
-```
+````
 
 ## Context
 
 In **gatsby-node.ts**:
 
-```ts
+````ts
 
 ...
 	createPage({
@@ -94,11 +96,11 @@ In **gatsby-node.ts**:
         },
 	})
 	  ...
-```
+````
 
-This field **slug** you can use in [[Creating a post page in GatsbyJS#Page Query]] as the parameter of the query:
+This field **slug** you can use in [Creating a post page in GatsbyJS > Page Query](Creating%20a%20post%20page%20in%20GatsbyJS.md#page-query) as the parameter of the query:
 
-```ts
+````ts
 export const query = graphql`
   query BlogPostQuery($slug: String!) { // here is the field from context
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
@@ -110,23 +112,24 @@ export const query = graphql`
     }
   }
 `
-```
+````
 
 Syntax:
 
 **$slug: String!**
 
-- $slug is the parameter name from context. it should be the same as in **gatsby-node.ts**
-- String is type of value
-- **!** it means that the parameter **is required**
+* $slug is the parameter name from context. it should be the same as in **gatsby-node.ts**
+* String is type of value
+* **!** it means that the parameter **is required**
 
-> This parameter is needed to dynamically display the content with $slug = slug (where slug is coming from url "localhost/posts/\{slug\}") in **PostLayout**
+ > 
+ > This parameter is needed to dynamically display the content with $slug = slug (where slug is coming from url "localhost/posts/{slug}") in **PostLayout**
 
 ## Page Query
 
-In the component **PostLayout** put [[GraphQL]] query:
+In the component **PostLayout** put [GraphQL](GraphQL.md) query:
 
-```ts
+````ts
 export const query = graphql`
   query BlogPost {
     markdownRemark(frontmatter: { slug: { eq: "/greetings-post" } }) {
@@ -138,11 +141,11 @@ export const query = graphql`
     }
   }
 `
-```
+````
 
 It should return data of the post with **slug** = "/greetings-post" and put it into ⚠️ **props of the component**:
 
-```ts
+````ts
 
 type Props {
   data: {
@@ -163,15 +166,16 @@ const PostLayout = ({data}: Props) => {
     </Layout>
   )
 }
-```
+````
 
 ## Display html in the post component
 
 Using **dangerouslySetInnerHTML**
 
-> 🚨  I don't like this method of rendering html. Maybe there is some other solution.
+ > 
+ > 🚨  I don't like this method of rendering html. Maybe there is some other solution.
 
-```ts
+````ts
 const PostLayout = ({ data: { markdownRemark } }: PostLayoutProps) => {
 	...
       <div
@@ -181,4 +185,4 @@ const PostLayout = ({ data: { markdownRemark } }: PostLayoutProps) => {
       ></div>
 	...
 }
-```
+````

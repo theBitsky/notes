@@ -1,15 +1,18 @@
 ---
-title: 'Angular'
-tags: ['javascript', 'typescript', 'angular']
+title: Angular
+tags:
+  - javascript
+  - typescript
+  - angular
 public: true
-date: '2021-05-16'
+date: 2021-05-16
 ---
 
 # Angular
 
-A [[TypeScript]] framework for building Front End web applications. 
+A [TypeScript](TypeScript.md) framework for building Front End web applications. 
 
 ### Links
 
--  [angular.io](https://angular.io)
--  [GitHub](https://github.com/angular/angular)
+* [angular.io](https://angular.io)
+* [GitHub](https://github.com/angular/angular)

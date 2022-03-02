@@ -1,38 +1,39 @@
 ---
-title: 'Yarn'
-tags: ['javascript']
+title: Yarn
+tags:
+  - javascript
 public: true
-date: '2021-01-03'
+date: 2021-01-03
 ---
 
 # Yarn
 
-**Yarn** is a package manager for [[JavaScript]] and [[TypeScript]]. It is a alternative to [[npm]]
+**Yarn** is a package manager for [JavaScript](JavaScript.md) and [TypeScript](TypeScript.md). It is a alternative to [npm](npm.md)
 
 ### Links
 
-- [yarnpkg.com](https://yarnpkg.com/)
+* [yarnpkg.com](https://yarnpkg.com/)
 
 ## Workspaces
 
-Yarn provide a solution to manage [[Monorepo]] - Yarn Workspaces
+Yarn provide a solution to manage [Monorepo](Monorepo.md) - Yarn Workspaces
 
-- Basically a [[Monorepo]] manager
-- in comparison with [[Lerna.js]] Yarn Workspaces are low-level
+* Basically a [Monorepo](Monorepo.md) manager
+* in comparison with [Lerna.js](Lerna.js.md) Yarn Workspaces are low-level
 
 ### Setup from scratch
 
------
+---
 
-- Source: [yarn-workspaces-sample (GitHub)](https://github.com/byteski/yarn-workspaces-sample)
+* Source: [yarn-workspaces-sample (GitHub)](https://github.com/byteski/yarn-workspaces-sample)
 
------
+---
 
-```bash
+````bash
 mkdir yarn-workspaces-sample && cd yarn-workspaces-sample && touch package.json
-```
+````
 
-```json
+````json
 // package.json
 {
     "private": true,
@@ -40,22 +41,22 @@ mkdir yarn-workspaces-sample && cd yarn-workspaces-sample && touch package.json
         "packages/*"
     ]
 }
-```
+````
 
-```bash
+````bash
 mkdir packages && mkdir packages/server && mkdir packages/utils
-```
+````
 
-```bash
+````bash
 cd packages/utils && yarn init -y
 cd ../server && yarn init -y
-```
+````
 
-```bash
+````bash
 cd ../utils && touch main.js
-```
+````
 
-```js
+````js
 // packages/utils/main.js
 function greeting(name) {
     console.log(`Hello, ${name}`);
@@ -64,22 +65,22 @@ function greeting(name) {
 module.exports = {
     greeting
 };
-```
+````
 
-```bash
+````bash
 cd ../server && touch main.js
-```
+````
 
-```js
+````js
 // packages/server/main.js
 
 const { greeting } = require('utils');
 
 greeting('byte');
 
-```
+````
 
-```json
+````json
 // packages/utils/package.json
 {
   "name": "utils",
@@ -87,9 +88,9 @@ greeting('byte');
   "main": "main.js", // index.js ==> main.js
   "license": "MIT"
 }
-```
+````
 
-```json
+````json
 // packages/server/package.json
 {
   // ...
@@ -97,23 +98,23 @@ greeting('byte');
     "utils": "1.0.0"
   }
 }
-```
+````
 
-```bash
+````bash
 yarn install
-```
+````
 
 **yarn install** will link dependency **utils** to **server**
 
 After installing let's check that **server** has workspace dependency **utils**:
 
-```
+````
 yarn workspaces info
-```
+````
 
 should print this:
 
-```json
+````json
 {
   "server": {
     "location": "packages/server",
@@ -128,11 +129,11 @@ should print this:
     "mismatchedWorkspaceDependencies": []
   }
 }
-```
+````
 
 Add scripts
 
-```json
+````json
 // packages/server/package.json
 {
   // ...
@@ -140,13 +141,13 @@ Add scripts
     "dev": "node main.js"
   }
 }
-```
+````
 
-```json
+````json
 // /package.json (root)
 {
     "scripts": {
         "server:dev": "yarn workspace server dev"
     }
 }
-```
+````

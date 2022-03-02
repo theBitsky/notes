@@ -1,6 +1,7 @@
 ---
-title: 'Homebrew'
-tags: ['macos']
+title: Homebrew
+tags:
+  - macos
 public: true
 ---
 
@@ -10,5 +11,5 @@ A package manager for macOS
 
 ### Links
 
-- [Website](https://brew.sh/)
-- [GitHub](https://github.com/Homebrew/brew)
+* [Website](https://brew.sh/)
+* [GitHub](https://github.com/Homebrew/brew)

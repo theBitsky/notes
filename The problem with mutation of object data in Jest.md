@@ -1,23 +1,26 @@
 ---
-title: 'The problem with mutation of object data in Jest'
+title: The problem with mutation of object data in Jest
 public: true
-tags: ['testing', 'jest', 'javascript']
-date: '2021-04-14'
+tags:
+  - testing
+  - jest
+  - javascript
+date: 2021-04-14
 ---
 
 # The problem with mutation of object data in Jest
 
 Let's say we have some method that just set fields like this:
 
-```js
+````js
 joinServer({ host, user }) {
     user.serverId = host.serverId;
 }
-```
+````
 
 Here is the example of test of this method:
 
-```js
+````js
   it("should move user to host's server", () => {
     const user1 = {
       id: 1,
@@ -35,24 +38,24 @@ Here is the example of test of this method:
 
     expect(user2.serverId).toBe(user1.serverId);
   });
-```
+````
 
 Okay, this test is passed. Now, for some reason, we changed the code of the method. It could be just a mistake. Now it looks like this:
 
-```js
+````js
   joinServer({ host, user }) {
     // before
     // user.serverId = host.serverId;
     // after
     host.serverId = user.serverId;
   },
-```
+````
 
 Let's run test. It's still successful! But it's wrong.
 
 To solve this problem we should write fixtures in test like this:
 
-```js
+````js
   it("should move user to host's server", () => {
     const USER1_SERVER_ID = 1;
 
@@ -72,6 +75,6 @@ To solve this problem we should write fixtures in test like this:
 
     expect(user2.serverId).toBe(USER1_SERVER_ID);
   });
-```
+````
 
 And now test is failed because method has wrong behavior.

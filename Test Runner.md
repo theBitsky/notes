@@ -1,8 +1,9 @@
 ---
 public: true
-tags: ['testing']
-date: '2021-04-13'
-title: 'Test Runner'
+tags:
+  - testing
+date: 2021-04-13
+title: Test Runner
 ---
 
 # Test Runner
@@ -11,16 +12,16 @@ title: 'Test Runner'
 
 Required features:
 
-- Run tests in parallel
-- Isolation of tests
-- Test filtering
-- Watch mode (re-running edited tests)
-- Coverage
-- Reports (html, etc)
+* Run tests in parallel
+* Isolation of tests
+* Test filtering
+* Watch mode (re-running edited tests)
+* Coverage
+* Reports (html, etc)
 
 ### Examples
 
-- In JavaScript
-	- [[JestJS]]
-	- [[mocha.js]]
-	- [[ava.js]]
+* In JavaScript
+  * [JestJS](JestJS.md)
+  * [mocha.js](mocha.js.md)
+  * [ava.js](ava.js.md)

@@ -1,29 +1,32 @@
 ---
-slug: "first-steps-in-unit-testing"
-aliases: ['/blog/article/first-steps-in-unit-testing']
+slug: first-steps-in-unit-testing
+aliases:
+  - /blog/article/first-steps-in-unit-testing
 date: "2021-04-18 23:00:00"
-title: "First Steps in Unit Testing with TypeScript"
-tags: ["testing", "jest", "javascript", "react", "typescript"]
+title: First Steps in Unit Testing with TypeScript
+tags:
+  - testing
+  - jest
+  - javascript
+  - react
+  - typescript
 keywords:
-  [
-    "testing",
-    "unit testing",
-    "tests",
-    "javascript",
-    "typescript",
-    "end to end tests",
-    "integration tests",
-    "unit tests",
-    "test doubles",
-  ]
-type: "blog"
+  - testing
+  - unit testing
+  - tests
+  - javascript
+  - typescript
+  - end to end tests
+  - integration tests
+  - unit tests
+  - test doubles
+type: blog
 public: true
 ---
 
-
 Unit testing is one of the greatest ways to write effective code. In this article, I want to introduce you to what is this type of testing exactly and some basic terms of the Unit testing world.
 
-Because I work mostly with [[TypeScript]] and [[React]] ecosystems, I will refer to tools and examples that are commonly used there, but terms and definitions in this article are applicable to all languages and technologies.
+Because I work mostly with [TypeScript](TypeScript.md) and [React](React.md) ecosystems, I will refer to tools and examples that are commonly used there, but terms and definitions in this article are applicable to all languages and technologies.
 
 ## Types of tests
 
@@ -31,9 +34,9 @@ Because I work mostly with [[TypeScript]] and [[React]] ecosystems, I will refer
 
 Before we dive into the subject of Unit testing, we need to know about other types of testing. In general, the are three types of software testing:
 
-- End-to-End testing
-- Integration testing
-- Unit testing
+* End-to-End testing
+* Integration testing
+* Unit testing
 
 ### Unit tests
 
@@ -45,7 +48,7 @@ Unit test can be a kind of documentation of the module.
 
 ### What is a Unit?
 
-Okay, now we know that Unit tests are used to test module (unit). But what is a unit? It depends on the technologies and programming languages that you use. In [[TypeScript]] ([[JavaScript]]) it could be a function or class. In [[React]] it will be a component, which is, basically, [[JavaScript]] function.
+Okay, now we know that Unit tests are used to test module (unit). But what is a unit? It depends on the technologies and programming languages that you use. In [TypeScript](TypeScript.md) ([JavaScript](JavaScript.md)) it could be a function or class. In [React](React.md) it will be a component, which is, basically, [JavaScript](JavaScript.md) function.
 
 For each unit, we should write an independent file that contains tests for this unit (module).
 
@@ -53,13 +56,13 @@ But, what if a class or component contains several methods or functions? Do we n
 
 In the case of the class method, it doesn't make sense to write a test for method as for independent module (unit) because methods are inner parts of classes where they are placed. Mostly, methods have no meaning outside their classes, otherwise, they should not be a method of class but an independent function (if it's possible in a programming language).
 
-What about something like [[React]] component? Well, it depends. For example, if you have some local state in your component when it doesn't make sense to write a test for the component's function as a unit, because this function, most likely, works with this state. In this case, you should think about the component as a unit itself and it doesn't matter the component has inner functions or not.
+What about something like [React](React.md) component? Well, it depends. For example, if you have some local state in your component when it doesn't make sense to write a test for the component's function as a unit, because this function, most likely, works with this state. In this case, you should think about the component as a unit itself and it doesn't matter the component has inner functions or not.
 
-Before answering the question _Why we should prefer to write Unit tests as developers?_ we should find out about other types of tests.
+Before answering the question *Why we should prefer to write Unit tests as developers?* we should find out about other types of tests.
 
-Typical example of **_Unit_** in [[TypeScript]] - a helper function that doesn't have side effects:
+Typical example of ***Unit*** in [TypeScript](TypeScript.md) - a helper function that doesn't have side effects:
 
-```ts
+````ts
 interface Transaction {
   // ...
   user: User;
@@ -67,11 +70,11 @@ interface Transaction {
 
 export const getUsersFromTransactions = (transactions: Transaction[]) =>
   transactions.map(({ user }) => user);
-```
+````
 
-Another one is a model class in [[TypeScript]]. In this class we have just simple getter methods and fields:
+Another one is a model class in [TypeScript](TypeScript.md). In this class we have just simple getter methods and fields:
 
-```ts
+````ts
 export class TransactionModel extends Model {
   // some methods and fields
 
@@ -90,11 +93,11 @@ export class TransactionModel extends Model {
     }`;
   }
 }
-```
+````
 
-An example of **_Unit_** in [[React]]. Simple component that renders information about user and has inner state:
+An example of ***Unit*** in [React](React.md). Simple component that renders information about user and has inner state:
 
-```tsx
+````tsx
 import React, { FC, useState } from "react";
 
 interface Props {
@@ -129,56 +132,55 @@ export const UserCard: FC<Props> = ({ user }) => {
     </Card>
   );
 };
-```
+````
 
 ### End-to-End tests
 
-End-to-End (or e2e for short) tests are used to test software as a whole system from an outside observer's perspective. What does it mean? In [[Front End]] development it looks like this:
+End-to-End (or e2e for short) tests are used to test software as a whole system from an outside observer's perspective. What does it mean? In [Front End](Front%20End.md) development it looks like this:
 
-- you write a test that "opens" the browser
-- it goes to a specific page or view of your application
-- it manipulates with the interface of your application: click on buttons, scrolling, types text in forms, etc
+* you write a test that "opens" the browser
+* it goes to a specific page or view of your application
+* it manipulates with the interface of your application: click on buttons, scrolling, types text in forms, etc
 
-The result of these tests should be _correct_ behavior of the application's UI. E2E emulates user's interaction with your application. These tests don't know how the system _actually_ works inside.
+The result of these tests should be *correct* behavior of the application's UI. E2E emulates user's interaction with your application. These tests don't know how the system *actually* works inside.
 
-Technologies that can be used for writing End-to-End test in [[TypeScript]]/[[JavaScript]] ecosystem are:
+Technologies that can be used for writing End-to-End test in [TypeScript](TypeScript.md)/[JavaScript](JavaScript.md) ecosystem are:
 
-- [[Puppeteer]]
-- [[Playwright]]
-- [[Cypress]]
+* [Puppeteer](Puppeteer.md)
+* [Playwright](Playwright.md)
+* [Cypress](Cypress.md)
 
 ### Integration tests
 
 Integration tests (also called module tests) are used to test a group of modules and interacting modules with each other in the system. They test how individual pieces work together as a whole.
 
-In [[Front End]] a great example of this type of test could be a test that checks that the application works well when a few Units (for example, components in [[React]]) interacting with each other.
+In [Front End](Front%20End.md) a great example of this type of test could be a test that checks that the application works well when a few Units (for example, components in [React](React.md)) interacting with each other.
 
 ## Why prefer unit testing?
 
-Alright, because we know about a few types of testing, let's discuss _Why should we prefer Unit tests as developers?_ Unit tests have several advantages over other tests:
+Alright, because we know about a few types of testing, let's discuss *Why should we prefer Unit tests as developers?* Unit tests have several advantages over other tests:
 
-- Speed. Unit tests are written and, mostly, executed faster than other types of tests.
-- Unit tests can show us where exactly the error occurred. End-to-End tests check an application as a whole system and you may not understand which part of the system contains the error.
-- Because you write Unit tests for specific units like modules, functions, classes, components - you are mentally closer to the code. It's more understandable for you as a developer because you interact with the same concepts as in the code.
-
+* Speed. Unit tests are written and, mostly, executed faster than other types of tests.
+* Unit tests can show us where exactly the error occurred. End-to-End tests check an application as a whole system and you may not understand which part of the system contains the error.
+* Because you write Unit tests for specific units like modules, functions, classes, components - you are mentally closer to the code. It's more understandable for you as a developer because you interact with the same concepts as in the code.
 
 ## Structure of Unit test
 
-There is a concept of structuring Unit tests called **AAA** - _Arrange_, _Act_, _Assert_. The idea is simple: you split your unit test into three phases:
+There is a concept of structuring Unit tests called **AAA** - *Arrange*, *Act*, *Assert*. The idea is simple: you split your unit test into three phases:
 
-- Phase _Arrange_. It is a step where you prepare your test before the next phase (Act). Here you should make stubs, mocks, and other stuff (you will read about this below) that is needed for executing a code that the test is for.
-  - In terms of [[Jest]], these are methods **beforeEach**, **beforeAll**, **afterEach**, **afterAll**.
-  - Sometimes, you should make a mock for some modules that are used in the test (in this case we talk about [[JavaScript]] modules that can be used by constructs _import_ or _require_). For this purpose, you can use libraries that contain this feature ([[Jest]]), or you can use a library that is made just for this specific feature ([[Rewire]]).
-  - The data for input parameters should be prepared here.
-- Phase _Act_. In this phase, you write the execution of the unit (function, class, component, etc) that test is for.
-- Phase _Assert_. It is a phase where we should write expectations of the module's execution result. If expectations are the same as the result then the test is passed (green), otherwise the test is failed (red).
-  - In this phase, we should use some [[Assertion]] framework or library to write expectations. It could be a specific library like [[Chai.js]] or a library that contains an ability to write expectations like [[Jest]].
+* Phase *Arrange*. It is a step where you prepare your test before the next phase (Act). Here you should make stubs, mocks, and other stuff (you will read about this below) that is needed for executing a code that the test is for.
+  * In terms of *Jest*, these are methods **beforeEach**, **beforeAll**, **afterEach**, **afterAll**.
+  * Sometimes, you should make a mock for some modules that are used in the test (in this case we talk about [JavaScript](JavaScript.md) modules that can be used by constructs *import* or *require*). For this purpose, you can use libraries that contain this feature (*Jest*), or you can use a library that is made just for this specific feature ([Rewire](Rewire.md)).
+  * The data for input parameters should be prepared here.
+* Phase *Act*. In this phase, you write the execution of the unit (function, class, component, etc) that test is for.
+* Phase *Assert*. It is a phase where we should write expectations of the module's execution result. If expectations are the same as the result then the test is passed (green), otherwise the test is failed (red).
+  * In this phase, we should use some [Assertion](Assertion.md) framework or library to write expectations. It could be a specific library like [Chai.js](Chai.js.md) or a library that contains an ability to write expectations like *Jest*.
 
 ## Test Doubles
 
-I have previously mentioned terms such as _mocks_ and _stubs_. What do they mean? As we learned earlier, Unit tests are tests of modules and they have to test modules independently of each other. Mostly, modules have input parameters that receive some data. This data can be an output of another module. But we can't just use this another module's output data in the test. It won't be a Unit test. What if this _another module_ will be changed inside? Then, the test of the first module will be failed. The problem here is that test will be failed because of the module that the test not for. It would violate the principle of modularity of tests.
+I have previously mentioned terms such as *mocks* and *stubs*. What do they mean? As we learned earlier, Unit tests are tests of modules and they have to test modules independently of each other. Mostly, modules have input parameters that receive some data. This data can be an output of another module. But we can't just use this another module's output data in the test. It won't be a Unit test. What if this *another module* will be changed inside? Then, the test of the first module will be failed. The problem here is that test will be failed because of the module that the test not for. It would violate the principle of modularity of tests.
 
-That's why we need to create fake data or to create fake behavior of another module for using it all in the input parameters of the tested module. To do this, we can use _Test Doubles_.
+That's why we need to create fake data or to create fake behavior of another module for using it all in the input parameters of the tested module. To do this, we can use *Test Doubles*.
 
 ### Dummy Object
 
@@ -190,7 +192,7 @@ the Dummy Object is needed when a module that we test has the required parameter
 
 Here is a simple example of dummy object:
 
-```ts
+````ts
 import { Player } from "./Player";
 
 export class DummyPlayer extends Player {
@@ -204,11 +206,11 @@ export class DummyPlayer extends Player {
     return 42;
   }
 }
-```
+````
 
 An example of test with dummy object:
 
-```ts
+````ts
 import { DummyPlayer } from "./DummyPlayer";
 import { GameSession } from "./GameSession";
 
@@ -224,7 +226,7 @@ describe("GameSession", () => {
     expect(gameSession.isStarted).toBe(true);
   });
 });
-```
+````
 
 ### Fake Object
 
@@ -232,19 +234,19 @@ It contains simplified data of the real object. It used to replace some real obj
 
 An example of the Fake Object is a fake instance of a database class that stored data in memory. You wouldn't need to read data from the database every time to use it in a test.
 
-A good example of using Fake is replacing **XMLHttpRequest** object by fake one using library [[Sinon.js]] - [Fake XHR and server](https://sinonjs.org/releases/latest/fake-xhr-and-server).
+A good example of using Fake is replacing **XMLHttpRequest** object by fake one using library [Sinon.js](Sinon.js.md) - [Fake XHR and server](https://sinonjs.org/releases/latest/fake-xhr-and-server).
 
 ### Stub
 
-**Stub** is an object which functions return predefined output data. It contains specific rules like _"when parameters are **x1** and **x2** we should return result **y**"_. Stub doesn't need to have parameters: a function can return some predefined data no matter what the parameters are. Predefined data is values that we need to make tests passed.
+**Stub** is an object which functions return predefined output data. It contains specific rules like *"when parameters are **x1** and **x2** we should return result **y**"*. Stub doesn't need to have parameters: a function can return some predefined data no matter what the parameters are. Predefined data is values that we need to make tests passed.
 
 Stubs guarantee us that test of a specific module won't fail when modules (the outputs of which is used in this module's test) were changed. However, there is another side to the coin. What if the results of these modules were changed too? Then, we will have not actual data (stubs) in the module's test.
 
-How can we avoid this problem? [[Static typing]] can help us here. If you use [[TypeScript]] and you specified interface or type of some module's output, you need to change Stubs in every test where a type of module's output and type of stub's output is different.
+How can we avoid this problem? [Static typing](static%20typing.md) can help us here. If you use [TypeScript](TypeScript.md) and you specified interface or type of some module's output, you need to change Stubs in every test where a type of module's output and type of stub's output is different.
 
-Here is an example. In [[Jest]] you can create stub by using method **spyOn**. It creates stub but it also can be used as a **Spy**:
+Here is an example. In *Jest* you can create stub by using method **spyOn**. It creates stub but it also can be used as a **Spy**:
 
-```ts
+````ts
 import * as helpers from "./helpers";
 
 describe("moveFiles", () => {
@@ -257,19 +259,19 @@ describe("moveFiles", () => {
     });
   });
 });
-```
+````
 
 ### Spy
 
-It is a method that is _spying on_ specific functions. Spy is tracking information from function about:
+It is a method that is *spying on* specific functions. Spy is tracking information from function about:
 
-- how many times was the function called
-- what was the result of the function's call
-- with what parameters were the function called
+* how many times was the function called
+* what was the result of the function's call
+* with what parameters were the function called
 
-Let's use [[Jest]] again. We can start to spy on specific function what should be called inside another function which is test for:
+Let's use *Jest* again. We can start to spy on specific function what should be called inside another function which is test for:
 
-```ts
+````ts
 it("should call helper `checkFile`", () => {
   jest.spyOn(helpers, "checkFile");
 
@@ -300,7 +302,7 @@ it("should call helper `checkFile`", () => {
     path: "/home",
   });
 });
-```
+````
 
 ### Mock
 
@@ -308,7 +310,7 @@ it("should call helper `checkFile`", () => {
 
 Okay, let's mock entire implementation of the function from previous example:
 
-```ts
+````ts
 import * as helpers from "./helpers";
 
 const file = {
@@ -341,15 +343,15 @@ describe("moveFiles", () => {
     expect(checkFile).toHaveBeenLastCalledWith(file);
   });
 });
-```
+````
 
 ### Fixtures
 
-There is another type of test doubles - Fixtures. They are more used in [[Front End]] development. Fixtures are fake data that replace in test real data from API. Instead of sending a request to a real API, you can use methods that return the same data as from API (fixtures).
+There is another type of test doubles - Fixtures. They are more used in [Front End](Front%20End.md) development. Fixtures are fake data that replace in test real data from API. Instead of sending a request to a real API, you can use methods that return the same data as from API (fixtures).
 
-In [[Back End]] is used for replacing requests to the real database. If you need some specific state of the database, you can make fixtures that replace data with a specific state from that database.
+In [Back End](Back%20End.md) is used for replacing requests to the real database. If you need some specific state of the database, you can make fixtures that replace data with a specific state from that database.
 
-How to create fixtures? There are several options. If you work on [[Front End]] side, [[Back End]] that you work with can provides you JSON file that generated based on the type of API responses. Sometimes you don't work closely with [[Back End]] engineers (for example - it's API of some external service). Then, you can generate JSON schemes based on API documentation like Swagger / Open API.
+How to create fixtures? There are several options. If you work on [Front End](Front%20End.md) side, [Back End](Back%20End.md) that you work with can provides you JSON file that generated based on the type of API responses. Sometimes you don't work closely with [Back End](Back%20End.md) engineers (for example - it's API of some external service). Then, you can generate JSON schemes based on API documentation like Swagger / Open API.
 
 ## Conclusions
 

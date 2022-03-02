@@ -1,11 +1,12 @@
 ---
-title: "List of interesting command-line interface tools"
-tags: ['linux', 'cli', 'terminal']
+title: List of interesting command-line interface tools
+tags:
+  - linux
+  - cli
+  - terminal
 public: true
 ---
 
-# List of interesting command-line interface tools 
+# List of interesting command-line interface tools
 
-- [ble.sh](https://github.com/akinomyoga/ble.sh)
-
-
+* [ble.sh](https://github.com/akinomyoga/ble.sh)

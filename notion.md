@@ -1,8 +1,10 @@
 ---
-title: 'Notion'
-tags: ['notion', 'apps']
+title: Notion
+tags:
+  - notion
+  - apps
 public: true
-date: '2020-12-07'
+date: 2020-12-07
 ---
 
 # Notion
@@ -11,9 +13,8 @@ date: '2020-12-07'
 
 All-in-one app that provides abilities to create:
 
-- notes
-- posts
-- plans
-- projects
-	- tasks
-
+* notes
+* posts
+* plans
+* projects
+  * tasks

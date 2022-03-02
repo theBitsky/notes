@@ -1,11 +1,13 @@
 ---
-tags: ['newsletter', 'service']
-title: "Revue newsletter"
+tags:
+  - newsletter
+  - service
+title: Revue newsletter
 public: false
 ---
 
-# Revue newsletter 
+# Revue newsletter
 
 ## Links
 
-- [getrevue.co](https://www.getrevue.co)
+* [getrevue.co](https://www.getrevue.co)

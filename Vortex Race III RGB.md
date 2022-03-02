@@ -1,9 +1,12 @@
 ---
-tags: ['keyboards', 'mechanical keybords']
-aliases: ['Vortex-Race-III-RGB']
+tags:
+  - keyboards
+  - mechanical keybords
+aliases:
+  - Vortex-Race-III-RGB
 title: Vortex Race III RGB
 public: true
-date: '2021-03-27'
+date: 2021-03-27
 ---
 
 # Vortex Race III RGB

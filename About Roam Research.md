@@ -1,7 +1,7 @@
 ---
-title: 'About Roam Research'
+title: About Roam Research
 public: true
-date: '2020-11-24'
+date: 2020-11-24
 ---
 
 # About Roam Research
@@ -10,5 +10,5 @@ date: '2020-11-24'
 
 Links:
 
-- [Roam Demo Videos](https://roamresearch.com/#/app/help/page/k5RxbGuJN)
-- [r/RoamResearch](https://www.reddit.com/r/RoamResearch/)
+* [Roam Demo Videos](https://roamresearch.com/#/app/help/page/k5RxbGuJN)
+* [r/RoamResearch](https://www.reddit.com/r/RoamResearch/)

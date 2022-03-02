@@ -1,5 +1,6 @@
 ---
-tags: ['site']
+tags:
+  - site
 ---
 
 Hello there! I am Byteski.

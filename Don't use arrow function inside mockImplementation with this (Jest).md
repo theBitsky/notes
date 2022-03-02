@@ -1,15 +1,18 @@
 ---
 title: "Don't use arrow function inside mockImplementation with this (Jest)"
 public: true
-tags: ['testing', 'jest', 'javascript']
-date: '2021-04-15'
+tags:
+  - testing
+  - jest
+  - javascript
+date: 2021-04-15
 ---
 
 # Don't use arrow function inside mockImplementation with this (Jest)
 
 When using the **arrow function**:
 
-```js
+````js
 // ...
       someAPI.JWT = jest.fn().mockImplementation(() => {
         this.authorize = jest.fn();
@@ -18,11 +21,11 @@ When using the **arrow function**:
 // ...  
 const jwtInstance = someAPI.JWT.mock.instances[0];
 console.log(jwtInstance); // mockConstructor
-```
+````
 
 When using **function**:
 
-```js
+````js
 // ...
       someAPI.JWT = jest.fn().mockImplementation(function () {
         this.authorize = jest.fn();
@@ -55,4 +58,4 @@ console.log(jwtInstance);
       credentials: { access_token: 'fake_access_token' }
     }
 */
-```
+````

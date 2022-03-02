@@ -1,8 +1,9 @@
 ---
-title: 'Server Side Rendering'
-tags: ['web-development']
+title: Server Side Rendering
+tags:
+  - web-development
 public: true
-date: '2020-12-16'
+date: 2020-12-16
 ---
 
 # Server Side Rendering
@@ -11,4 +12,4 @@ date: '2020-12-16'
 
 ### Links
 
-- [Rendering on the Web (developers.google.com)](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)
+* [Rendering on the Web (developers.google.com)](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)

@@ -2,20 +2,19 @@
 
 ## utilities
 
-- imgcat
-  - shows images in terminal
-
+* imgcat
+  * shows images in terminal
 
 ## fzf and vim
 
 to search file and open it in vim:
 
-```bash
+````bash
 vim -o `fzf`
-```
+````
 
 ### file preview (bat)
 
-```bash
+````bash
 fzf --preview 'bat --style numbers,changes --color=always {} | head -500'
-```
+````

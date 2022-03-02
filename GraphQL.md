@@ -1,8 +1,9 @@
 ---
-title: 'GraphQL'
-tags: ['graphql']
+title: GraphQL
+tags:
+  - graphql
 public: true
-date: '2020-12-16'
+date: 2020-12-16
 ---
 
 # GraphQL
@@ -11,8 +12,8 @@ date: '2020-12-16'
 
 ### Links
 
-- [GraphQL spec (GitHub)](https://github.com/graphql/graphql-spec)
+* [GraphQL spec (GitHub)](https://github.com/graphql/graphql-spec)
 
 ### Examples of using GraphQL
 
-- [[Basic example of GraphQL in GatsbyJS]]
+* [Basic example of GraphQL in GatsbyJS](Basic%20example%20of%20GraphQL%20in%20GatsbyJS.md)

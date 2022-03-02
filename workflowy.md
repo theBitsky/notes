@@ -1,8 +1,9 @@
 ---
-title: 'Workflowy'
-tags: ['apps']
+title: Workflowy
+tags:
+  - apps
 public: true
-date: '2020-12-07'
+date: 2020-12-07
 ---
 
 # Workflowy

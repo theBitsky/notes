@@ -1,15 +1,16 @@
 ---
-title: 'Microsoft'
-tags: ['microsoft']
+title: Microsoft
+tags:
+  - microsoft
 public: true
-date: '2021-07-08'
+date: 2021-07-08
 ---
 
-# Microsoft 
+# Microsoft
 
-- An American international big tech company
+* An American international big tech company
 
 ### Links
 
-- [Official website (microsoft.com)](https://www.microsoft.com)
-- [github.com/microsoft](https://github.com/microsoft)
+* [Official website (microsoft.com)](https://www.microsoft.com)
+* [github.com/microsoft](https://github.com/microsoft)

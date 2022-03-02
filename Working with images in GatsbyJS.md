@@ -1,25 +1,26 @@
 ---
-title: 'Working with images in GatsbyJS'
-tags: ['gatsbyjs']
+title: Working with images in GatsbyJS
+tags:
+  - gatsbyjs
 public: true
-date: '2020-12-22'
+date: 2020-12-22
 ---
 
-# Working with images in [[GatsbyJS]]
+# Working with images in [GatsbyJS](GatsbyJS.md)
 
 install npm deps:
 
-- [gatsby-image](https://www.gatsbyjs.com/plugins/gatsby-image/?=gatsby-image#gatsby-image)
-- [gatsby-plugin-sharp](https://www.gatsbyjs.com/plugins/gatsby-plugin-sharp/)
-- [gatsby-transformer-sharp](https://www.gatsbyjs.com/plugins/gatsby-transformer-sharp/?=sharp)
+* [gatsby-image](https://www.gatsbyjs.com/plugins/gatsby-image/?=gatsby-image#gatsby-image)
+* [gatsby-plugin-sharp](https://www.gatsbyjs.com/plugins/gatsby-plugin-sharp/)
+* [gatsby-transformer-sharp](https://www.gatsbyjs.com/plugins/gatsby-transformer-sharp/?=sharp)
 
-```sh
+````sh
 npm install --save gatsby-transformer-sharp gatsby-plugin-sharp gatsby-image
-```
+````
 
 In **gatsby-config.js**
 
-```js
+````js
   plugins: [
   	// ...
     `gatsby-plugin-sharp`,
@@ -34,13 +35,13 @@ In **gatsby-config.js**
     },
 	// ...
   ]
-```
+````
 
 ### Display photo
 
 In **Layout.tsx**
 
-```ts
+````ts
 import Img from "gatsby-image"
 // ...
 
@@ -63,5 +64,4 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 	  <Img fluid={data.file.childImageSharp.fluid}></Img>
 	</>
   )
-```
-
+````

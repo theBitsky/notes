@@ -1,15 +1,18 @@
 ---
-title: 'Test of async method in Jest'
+title: Test of async method in Jest
 public: true
-tags: ['testing', 'jest', 'javascript']
-date: '2021-04-14'
+tags:
+  - testing
+  - jest
+  - javascript
+date: 2021-04-14
 ---
 
 # Test of async method in Jest
 
 An example of code:
 
-```js
+````js
 module.exports = {
   checkUser: (user, cb) => {
     if (user.age < 18) {
@@ -20,11 +23,11 @@ module.exports = {
     }
   },
 };
-```
+````
 
 If you write test like this:
 
-```js
+````js
 describe("example", () => {
   it("First test", () => {
     expect.hasAssertions(); // it checks that at least one "expect" was called
@@ -38,13 +41,13 @@ describe("example", () => {
     });
   });
 });
-```
+````
 
 **This test will fail**
 
-To make this test passed you should use callback function in method **it** or use [[Promise]]
+To make this test passed you should use callback function in method **it** or use *Promise*
 
-```js
+````js
 describe("example", () => {
   it("First test", (done) => {
     expect.hasAssertions();
@@ -59,4 +62,4 @@ describe("example", () => {
     });
   });
 });
-```
+````

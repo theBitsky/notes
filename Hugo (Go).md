@@ -1,47 +1,49 @@
 ---
-title: 'Hugo (Go)'
-tags: ['hugo', 'golang']
+title: Hugo (Go)
+tags:
+  - hugo
+  - golang
 public: true
-type: "note"
-date: '2021-06-22'
+type: note
+date: 2021-06-22
 ---
 
 # Hugo (Go)
 
 ## Links
 
-- [gohugo.io](https://gohugo.io)
-- [GitHub](https://github.com/gohugoio/hugo)
+* [gohugo.io](https://gohugo.io)
+* [GitHub](https://github.com/gohugoio/hugo)
 
-A static-site generator written in [[Golang]].
+A static-site generator written in [Golang](Golang.md).
 
 ## Resources
 
-- [byteski/hugo-blog-sample](https://github.com/byteski/hugo-blog-sample)
+* [byteski/hugo-blog-sample](https://github.com/byteski/hugo-blog-sample)
 
 ## Installing
 
-```
+````
 brew install hugo
-```
+````
 
-```
+````
 hugo version
-```
+````
 
-```
+````
 Hugo Static Site Generator v0.80.0/extended darwin/amd64 BuildDate: unknown
-```
+````
 
 ## Creating a new site
 
-```
+````
 hugo new site <folder-name>
-```
+````
 
 ## Structure
 
-```
+````
 ls -1
 
 archetypes/
@@ -51,41 +53,41 @@ data/
 layouts/
 static/
 themes/
-```
+````
 
-- **archetypes/** - entities that are smth like markdown templates of content
-- **config.toml** - main configuration file
-- **content/** - folder that contains markdown content
-- **data/** - folder that contains configuration files and data that used in generating your site
-- **layout/** - folder that contains html templates for specific parts of website
-- **static/** - folder that contains static files like images, fonts, etc.
-- **themes/** - folder that can contain existing Hugo themes
+* **archetypes/** - entities that are smth like markdown templates of content
+* **config.toml** - main configuration file
+* **content/** - folder that contains markdown content
+* **data/** - folder that contains configuration files and data that used in generating your site
+* **layout/** - folder that contains html templates for specific parts of website
+* **static/** - folder that contains static files like images, fonts, etc.
+* **themes/** - folder that can contain existing Hugo themes
 
 ## Starting website
 
-```
+````
 hugo server
-```
+````
 
 To running and see draft content:
 
-```
+````
 hugo server -D
-```
+````
 
-> The empty white page in just created app is okay
+ > 
+ > The empty white page in just created app is okay
 
 On root route (/) Hugo try to render layout with name:
 
-- **list.html** 
-- or 
-- **index.html** (**index.html** takes priority)
+* **list.html** 
+* or 
+* **index.html** (**index.html** takes priority)
 
 Types of pages:
 
-- single (page of the specific post)
-- list (page that contains list of posts)
-
+* single (page of the specific post)
+* list (page that contains list of posts)
 
 ## Configuration file
 
@@ -97,19 +99,19 @@ Default settings:
 
 **config.toml**
 
-```toml
+````toml
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "My New Hugo Site"
-```
+````
 
 **config.yml**
 
-```yml
+````yml
 baseURL: "http://example.org/"
 languageCode: "en-us"
 title: "My New Hugo Site"
-```
+````
 
 ## Templating
 
@@ -117,7 +119,7 @@ Create template of the main page in path **/layouts/list.html**
 
 ### Add website title
 
-```html
+````html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -130,30 +132,29 @@ Create template of the main page in path **/layouts/list.html**
     
 </body>
 </html>
-```
+````
 
 **.Site.Title**:
 
-- **Site** - context
-	- it is context of config.yml file
-- **Title** - variable
+* **Site** - context
+  * it is context of config.yml file
+* **Title** - variable
 
 ### Add page title
 
-Create file **/content/_index.md**
+Create file **/content/\_index.md**
 
-```md
+````md
 ---
 title: "Home"
 ---
-```
+````
 
-- _index.md  - file that contains content of home page (root route - '/')
+* \_index.md  - file that contains content of home page (root route - '/')
 
 Add title of home page in **/layouts/list.html**:
 
-
-```html
+````html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -166,55 +167,55 @@ Add title of home page in **/layouts/list.html**:
     <h1>{{ .Page.Title }}</h1> <!-- Title of the page -->
 </body>
 </html>
-```
+````
 
 Because the layout is already in context of the page you can just change it:
 
-```html
+````html
 <h1>{{ .Page.Title }}</h1> <!-- Title of the page -->
-```
+````
 
 to 
 
-```html
+````html
 <h1>{{ .Title }}</h1> <!-- Title of the page -->
-```
+````
 
 ## Render list of pages in loop
 
 Create new pages **/content/about.md** and **/content/contact.md**
 
-```md
+````md
 ---
 title: "About"
 ---
-```
+````
 
 To render list of these pages with their links just add this code in **layouts/list.html**:
 
-```html
+````html
 <ul>
 	{{ range .Pages }}
 		<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
 	{{ end }}
 </ul>
-```
+````
 
-- **range** is a loop here. it iterates in **.Pages** which is a list of data about each page
-- **.Permalink** - link to the specific page
-- **.Title** - the title of the page which is declared in markdown metadata
+* **range** is a loop here. it iterates in **.Pages** which is a list of data about each page
+* **.Permalink** - link to the specific page
+* **.Title** - the title of the page which is declared in markdown metadata
 
 ## Default layouts
 
-Create folder **/layouts/_default** and move **layouts/list.html** there
+Create folder **/layouts/\_default** and move **layouts/list.html** there
 
-Layouts from this folder **/layouts/_default** will be used for all content by default
+Layouts from this folder **/layouts/\_default** will be used for all content by default
 
 ## Creating template for a single page
 
-Create file **/layouts/_default/single.html**:
+Create file **/layouts/\_default/single.html**:
 
-```html
+````html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -228,7 +229,7 @@ Create file **/layouts/_default/single.html**:
     <div>{{ .Content }}</div>
 </body>
 </html>
-```
+````
 
 If you open page **/about** in the browser you'll see this html structure.
 
@@ -236,24 +237,24 @@ If you open page **/about** in the browser you'll see this html structure.
 
 Change the loop in the layout to display list of resources that have type "page":
 
-```html
+````html
 <ul>
 	{{ range where .Pages "Type" "page" }}
 		<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
 	{{ end }}
 </ul>
-```
+````
 
 By default markdown resources in **/content** has type "page".
 
 If you don't want to show some specific resource as page you can specify type in metadata:
 
-```md
+````md
 ---
 title: "About"
 type: "post"
 ---
-```
+````
 
 ## Display list of pages/posts of specific section
 
@@ -269,17 +270,17 @@ In that case, **blog** and **notes** are **Sections** in Hugo.
 
 ### Display list of resources of section "blog"
 
-```html
+````html
 {{ range where .Site.RegularPages "Section" "blog" }}
 	<li>
 		<a href="{{ .Permalink }}">{{ .Title }}</a>
 	</li>
 {{ end }}
-```
+````
 
 #### With pagination
 
-```html
+````html
 <div>
 	{{ $paginator := .Paginate (where .Pages "Section" "blog") }}
 	{{ range $paginator.Pages }}
@@ -291,19 +292,17 @@ In that case, **blog** and **notes** are **Sections** in Hugo.
 	{{ end }}
 	{{ template "_internal/pagination.html" . }}
 </div>
-```
-
-
+````
 
 ## Splitting layouts
 
-Let's say we have two layouts: for home page **layouts/_default/list.html** and for single page **layouts/_default/single.html**
+Let's say we have two layouts: for home page **layouts/\_default/list.html** and for single page **layouts/\_default/single.html**
 
 They have pretty similar html structure:
 
 **list.html**
 
-```html
+````html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -323,11 +322,11 @@ They have pretty similar html structure:
     </div>
 </body>
 </html>
-```
+````
 
 **single.html**
 
-```html
+````html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -341,13 +340,13 @@ They have pretty similar html structure:
     <div>{{ .Content }}</div>
 </body>
 </html>
-```
+````
 
 To avoid repeating code we can make base layout that will contain common html structure. 
 
-Create the file **/layouts/_default/baseof.html**
+Create the file **/layouts/\_default/baseof.html**
 
-```html
+````html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -368,56 +367,56 @@ Create the file **/layouts/_default/baseof.html**
     {{ block "content" . }}{{ end }}
 </body>
 </html>
-```
+````
 
-- `{{ block "content" . }}{{ end }}` renders layouts that have the same "name"
+* `{{ block "content" . }}{{ end }}` renders layouts that have the same "name"
 
-For home page let's change **/layouts/_default/list.html**:
+For home page let's change **/layouts/\_default/list.html**:
 
-```html
+````html
 {{ define "content" }}
     <h2>Index</h2>
 {{ end }}
-```
+````
 
 And now the **baseof** layout renders the sub layout **list.html** for home page
 
-For single page let's change **/layouts/_default/single.html**:
+For single page let's change **/layouts/\_default/single.html**:
 
-```html
+````html
 {{ define "content"}}
 	<h2>{{ .Title }}</h2>
 	<div>{{ .Content }}</div>
 {{ end }}
-```
+````
 
 ## Creating blog section
 
-Create folder **/content/blog** and put there new file **/content/blog/_index.md**
+Create folder **/content/blog** and put there new file **/content/blog/\_index.md**
 
-```md
+````md
 ---
 title: "Blog"
 ---
-```
+````
 
 And then create a few blank posts:
 
-```md
+````md
 ---
 title: "First Post"
 ---
 
 Deserunt duis fugiat reprehenderit officia cillum qui cillum Lorem. Aliquip sint esse fugiat elit. In incididunt quis ullamco cupidatat tempor. Lorem ad non incididunt ad magna nostrud.
-```
+````
 
-```md
+````md
 ---
 title: "Second Post"
 ---
 
 ...
-```
+````
 
 ### Layout of posts list
 
@@ -425,12 +424,12 @@ To display list of posts let's create new layout. But first of all, we need to c
 
 Why?
 
-- **/layouts/_default** could used for general resources like pages
-- **/layouts/blog** here are layouts for resources like blog posts
+* **/layouts/\_default** could used for general resources like pages
+* **/layouts/blog** here are layouts for resources like blog posts
 
 In **/layouts/blog** create file **list.html**:
 
-```html
+````html
 {{ define "content" }}
 <div>
     <h2>{{ .Title }}</h2>
@@ -443,7 +442,7 @@ In **/layouts/blog** create file **list.html**:
     </ul>
 </div>
 {{ end }}
-```
+````
 
 It will display list of posts links
 
@@ -453,25 +452,24 @@ Let's create a layout for page of post
 
 In folder **/layouts/blog** create file **single.html**:
 
-```html
+````html
 {{ define "content" }}
 <div>
     <h2>Post: {{ .Title }}</h2>
     <div>{{ .Content }}</div>
 </div>
 {{ end }}
-```
+````
 
 This html structure will be used only for posts. It won't be used for all pages (for example about or contact).
-
 
 ## Using partials templates
 
 Partials templates are specific layouts or files that can be used as parts of layout.
 
-Let's say we have file **/layouts/_default/baseof.html**:
+Let's say we have file **/layouts/\_default/baseof.html**:
 
-```html
+````html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -487,7 +485,7 @@ Let's say we have file **/layouts/_default/baseof.html**:
 </body>
 
 </html>
-```
+````
 
 Here we have section **head** that we could make it as partial template.
 
@@ -495,18 +493,18 @@ Create folder **/layouts/partials**. It is a specific folder for all partials.
 
 In that new folder let's create file **head.html** with head section of html structure:
 
-```html
+````html
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Site.Title }}</title> <!-- Title of website -->
 </head>
-```
+````
 
 To use this partial change the file **baseof.html**:
 
-```html
+````html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -518,7 +516,7 @@ To use this partial change the file **baseof.html**:
 </body>
 
 </html>
-```
+````
 
 ## Shortcodes
 
@@ -528,7 +526,7 @@ More information [here (gohugo.io)](https://gohugo.io/content-management/shortco
 
 Basically, it's something similar to components in MDX but without React/JSX.
 
-You can put a specific code in your [[markdown]] file and it will be rendered like a widget.
+You can put a specific code in your [markdown](markdown.md) file and it will be rendered like a widget.
 
 ### Built-in Shortcodes
 
@@ -536,9 +534,9 @@ There are several built-in shortcodes in Hugo that can be used out of box.
 
 For example, shortcode **youtube** that renders a video on the page:
 
-```markdown
+````markdown
 {{< youtube w7Ft2ymGmfc >}}
-```
+````
 
 ## Taxonomies
 
@@ -546,13 +544,12 @@ Basically, taxonomies are tags and categories or some new thing that (you can ma
 
 I take it that way:
 
-- Sections: One-to-many
-	- one section (blog)
-	- many resources
-- Taxonomies: Many-to-many
-	- many taxonomies (tags)
-	- many resources
-
+* Sections: One-to-many
+  * one section (blog)
+  * many resources
+* Taxonomies: Many-to-many
+  * many taxonomies (tags)
+  * many resources
 
 ### Creating a new taxonomy
 
@@ -560,7 +557,7 @@ Let's call it **technologies**
 
 First of all, we need to specify new taxonomy in **config file**:
 
-```yml
+````yml
 baseURL: "http://example.org/"
 languageCode: "en-us"
 title: "My New Hugo Site"
@@ -568,24 +565,25 @@ taxonomies:
   category: categories
   tag: tags
   technology: technologies
-```
+````
 
-> notice that we need to specify built-in taxonomies too if you want to use them
+ > 
+ > notice that we need to specify built-in taxonomies too if you want to use them
 
 Add this in some of your markdown resources:
 
-```markdown
+````markdown
 ---
 title: "Second Post"
 technologies: ["typescript", "react", "node"]
 ---
 
 ...
-```
+````
 
 To render the list of technologies in each post:
 
-```html
+````html
 <div>
 	{{ $paginator := .Paginate (where .Pages "Section" "blog") }}
 	{{ range $paginator.Pages }}
@@ -601,14 +599,14 @@ To render the list of technologies in each post:
 	{{ end }}
 	{{ template "_internal/pagination.html" . }}
 </div>
-```
+````
 
 To render the list of posts that has specific technology:
 
-- file: **/layouts/taxonomy/technology.html**
-- in the browser: /technologies/typescript
+* file: **/layouts/taxonomy/technology.html**
+* in the browser: /technologies/typescript
 
-```html
+````html
 {{ define "content" }}
 <div>
     <h2>Technology: {{ .Title }}</h2>
@@ -621,7 +619,7 @@ To render the list of posts that has specific technology:
       </ul>
 </div>
 {{ end }}
-```
+````
 
 ## Tags
 
@@ -629,7 +627,7 @@ Tags in Hugo are built-in taxonomies.
 
 ### Adding tags into the post
 
-```markdown
+````markdown
 <!-- /content/blog/First Post.md -->
 
 ---
@@ -639,14 +637,14 @@ tags: ["tag1", "tag2"]
 ---
 
 ....
-```
+````
 
 ### Creating a page with all tags of all resources (posts)
 
-- file: **/layouts/tag/list.html**
-- in the browser: /tags
+* file: **/layouts/tag/list.html**
+* in the browser: /tags
 
-```html
+````html
 {{ define "content" }}
 <div>
   <h2>{{ .Title }}</h2>
@@ -657,14 +655,14 @@ tags: ["tag1", "tag2"]
   </ul>
 </div>
 {{ end }}
-```
+````
 
 ### Creating a page of specific tag with list of posts
 
-- file: **/layouts/taxonomy/tag.html**
-- in the browser: /tags/\<tag_name\>
+* file: **/layouts/taxonomy/tag.html**
+* in the browser: /tags/\<tag_name\>
 
-```html
+````html
 {{ define "content" }}
 <div>
     <h2>#{{ .Title }}</h2>
@@ -677,8 +675,8 @@ tags: ["tag1", "tag2"]
       </ul>
 </div>
 {{ end }}
-```
+````
 
 ### Useful links
 
-- [Extend markdown parser for Hugo](https://kaleo.blog/article/extend-markdown-parser-for-hugo/)
+* [Extend markdown parser for Hugo](https://kaleo.blog/article/extend-markdown-parser-for-hugo/)

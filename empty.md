@@ -1,15 +1,14 @@
 ---
-title: "empty"
+title: empty
 public: false
-type: "note"
-
-slug: "empty"
-date: "2021-10-01"
+type: note
+slug: empty
+date: 2021-10-01
 image: "https://source.unsplash.com/random"
 tags: []
 keywords: []
 imageCopyright: Byteski
-imageCopyrightUrl: https://byte.ski
+imageCopyrightUrl: "https://byte.ski"
 ---
 
 # empty

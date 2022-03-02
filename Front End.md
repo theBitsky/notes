@@ -1,8 +1,10 @@
 ---
-title: "Front End"
-tags: ['web-development', 'front-end']
+title: Front End
+tags:
+  - web-development
+  - front-end
 public: true
-date: '2021-04-18'
+date: 2021-04-18
 ---
 
 # Front End

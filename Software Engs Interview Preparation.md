@@ -1,7 +1,11 @@
 ---
-date: '2021-10-08 13:38:00'
-tags: ['interview', 'algorithms', 'solvingproblems', 'faang']
-title: 'Software Engs Interview Preparation'
+date: "2021-10-08 13:38:00"
+tags:
+  - interview
+  - algorithms
+  - solvingproblems
+  - faang
+title: Software Engs Interview Preparation
 public: true
 ---
 
@@ -11,11 +15,10 @@ Everything about coding interview, solving problems, algorithms and data structu
 
 ## Links
 
-- [Daily Coding Problem](https://www.dailycodingproblem.com/)
-- [LeetCode](https://leetcode.com/)
-- [AlgoExpert](https://www.algoexpert.io)
-- https://thedailybyte.dev
-- https://binarysearch.com
-- https://resumeworded.com
-- https://bigfrontend.dev
-
+* [Daily Coding Problem](https://www.dailycodingproblem.com/)
+* [LeetCode](https://leetcode.com/)
+* [AlgoExpert](https://www.algoexpert.io)
+* https://thedailybyte.dev
+* https://binarysearch.com
+* https://resumeworded.com
+* https://bigfrontend.dev
