@@ -1,5 +1,6 @@
 ---
 slug: "detecting-errors-before-running-code-with-typescript"
+aliases: ['/blog/article/detecting-errors-before-running-code-with-typescript']
 date: "2021-05-10 21:10:00"
 image: "Images/detecting-errors-before-running-code-with-typescript.png"
 imageCopyright: Pixabay
