@@ -4,7 +4,7 @@ aliases:
   - /blog/article/1-weekly-newsletter
 date: "2021-07-30 17:00:00"
 title: "#1 Weekly Dose Of Software Engineering Stuff"
-image: Images/1-weekly-newsletter.png
+image: images/1-weekly-newsletter.png
 tags:
   - newsletter
 keywords:

@@ -30,7 +30,7 @@ Because I work mostly with [TypeScript](TypeScript.md) and [React](React.md) eco
 
 ## Types of tests
 
-![Pyramid of testing](/Images/pyramid-of-testing.png)
+![Pyramid of testing](/images/pyramid-of-testing.png)
 
 Before we dive into the subject of Unit testing, we need to know about other types of testing. In general, the are three types of software testing:
 

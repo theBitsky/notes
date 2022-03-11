@@ -8,7 +8,7 @@ tags:
   - typescript
   - typescriptbook
 date: "2021-07-16 04:00:00"
-image: Images/what-is-strict-mode-in-typescript-and-why-and-when-you-should-use-it-thumbnail.jpeg
+image: images/what-is-strict-mode-in-typescript-and-why-and-when-you-should-use-it-thumbnail.jpeg
 imageCopyright: Vlado Paunovic
 imageCopyrightUrl: "https://www.instagram.com/vlado.photo"
 keywords:
@@ -113,7 +113,7 @@ After typing a name (it can be whatever name you want) you should see that there
 
 Now, let's enable **strict mode** and see what happens. After enabling **strict** parameter in **tsconfig.json** you should see errors in your editor (if it supports TypeScript):
 
-![](/Images/what-is-strict-mode-in-typescript-and-why-you-should-use-it-screen-1.png)
+![](/images/what-is-strict-mode-in-typescript-and-why-you-should-use-it-screen-1.png)
 
 And if you run TypeScript compilation you will see that TypeScript highlight the error:
 

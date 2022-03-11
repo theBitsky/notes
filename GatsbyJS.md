@@ -121,7 +121,7 @@ title: "My first blog post"
 
 Let's see [Creating a post page in GatsbyJS](Creating%20a%20post%20page%20in%20GatsbyJS.md)
 
-## Images
+## images
 
 [Working with images in GatsbyJS](Working%20with%20images%20in%20GatsbyJS.md)
 

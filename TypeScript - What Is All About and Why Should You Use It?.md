@@ -3,7 +3,7 @@ slug: typescript-what-is-all-about-and-why-should-you-use-it
 aliases:
   - /blog/article/typescript-what-is-all-about-and-why-should-you-use-it
 date: "2021-05-08 19:50:00"
-image: Images/typescript-what-is-all-about-and-why-should-you-use-it.png
+image: images/typescript-what-is-all-about-and-why-should-you-use-it.png
 imageCopyright: eberhard grossgasteiger
 imageCopyrightUrl: "https://www.pexels.com/@eberhardgross"
 title: TypeScript - What Is All About and Why Should You Use It?
@@ -150,7 +150,7 @@ printCountries(countries);
 
 The error is still in the code but I see it in my editor (VSCode):
 
-![](/Images/example-countries-ts.png)
+![](/images/example-countries-ts.png)
 
 We added a few new constructions that help us to find mistakes before running the code. The most important thing here is on line 3 - **interface**. Let's just say that it is something like an object that contains information about the types of each country object's fields. We will get to that later in the next posts of this series.
 
@@ -200,7 +200,7 @@ printCountries(contries);
 
 And now we see the error in JavaScript file that doesn't have any types or other constructions that are specific for [TypeScript](TypeScript.md):
 
-![](/Images/example-countries-ts-check.png)
+![](/images/example-countries-ts-check.png)
 
 ## TypeScript Advantages
 
