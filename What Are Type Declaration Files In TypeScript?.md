@@ -3,7 +3,7 @@ slug: what-are-type-declaration-files-in-typescript
 aliases:
   - /blog/article/what-are-type-declaration-files-in-typescript
 date: "2021-05-11 20:00:00"
-image: Images/what-are-type-declaration-files-in-typescript.png
+image: images/what-are-type-declaration-files-in-typescript.png
 imageCopyright: Andreea Ch
 imageCopyrightUrl: "https://www.pexels.com/@andreea-ch-371539"
 title: What Are Type Declaration Files In TypeScript?

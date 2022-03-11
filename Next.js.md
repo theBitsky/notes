@@ -95,7 +95,7 @@ It will run a dev server. While this dev server is running all files of source c
 
 Now, if you run the app, you should see in the browser something like this:
 
-![](/Images/grokking-nextjs-getting-started-first-look-app.png)
+![](/images/grokking-nextjs-getting-started-first-look-app.png)
 
 It is a content of home page that is available as a file **index.tsx** in a folder **/pages**.
 

@@ -3,7 +3,7 @@ slug: how-to-configure-tsconfigjson-typescript-strict-options
 aliases:
   - /blog/article/how-to-configure-tsconfigjson-typescript-strict-options
 date: "2021-07-29 17:00:00"
-image: Images/how-to-configure-tsconfigjson-typescript-strict-options.jpeg
+image: images/how-to-configure-tsconfigjson-typescript-strict-options.jpeg
 title: "How To Configure tsconfig.json: TypeScript Strict options"
 tags:
   - typescript
@@ -49,7 +49,7 @@ This option was introduced in [TypeScript 4.4](https://devblogs.microsoft.com/ty
 
 The problem is that when we use construction **try catch** the type of variable **error** in *catch* is **any**:
 
-![](/Images/strict-typescript-screen-1.png)
+![](/images/strict-typescript-screen-1.png)
 
 It increases the potential risk of errors and application malfunction. The option **useUnknownInCatchVariables** solves this problem.
 
@@ -64,7 +64,7 @@ If you set option **useUnknownInCatchVariables** to `true` then variable **error
 }
 ````
 
-![](/Images/strict-typescript-screen-2.png)
+![](/images/strict-typescript-screen-2.png)
 
 You can also use type **Error** for error variable:
 
