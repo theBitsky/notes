@@ -4,6 +4,7 @@ aliases:
   - /blog/article/getting-started-using-and-configuring-typescript-compiler
 date: "2021-05-16 20:00:00"
 image: images/getting-started-with-typescript-compiler.png
+images: ['images/getting-started-with-typescript-compiler.png']
 imageCopyright: Francesco Ungaro
 imageCopyrightUrl: "https://www.pexels.com/@francesco-ungaro"
 title: Getting Started With TypeScript Compiler (tsc)
