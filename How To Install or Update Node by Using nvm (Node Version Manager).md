@@ -4,6 +4,7 @@ aliases:
   - /blog/article/how-to-install-or-update-node-by-using-nvm
 date: "2021-05-09 21:00:00"
 image: images/how-to-install-or-update-node-by-using-nvm.png
+images: ['images/how-to-install-or-update-node-by-using-nvm.png']
 imageCopyright: Lucky
 imageCopyrightUrl: "https://www.pexels.com/sv-se/@lucky-3592812"
 title: How To Install or Update Node by Using nvm (Node Version Manager)

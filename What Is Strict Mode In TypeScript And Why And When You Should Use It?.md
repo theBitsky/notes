@@ -9,6 +9,7 @@ tags:
   - typescriptbook
 date: "2021-07-16 04:00:00"
 image: images/what-is-strict-mode-in-typescript-and-why-and-when-you-should-use-it-thumbnail.jpeg
+images: ['images/what-is-strict-mode-in-typescript-and-why-and-when-you-should-use-it-thumbnail.jpeg']
 imageCopyright: Vlado Paunovic
 imageCopyrightUrl: "https://www.instagram.com/vlado.photo"
 keywords:

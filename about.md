@@ -2,6 +2,7 @@
 tags:
   - site
 key: about
+title: "About me"
 ---
 
 # About me
@@ -18,7 +19,7 @@ I work on the project that build on these following stack: [TypeScript](TypeScri
 
 I'm fun of static type checkers and languages, especially [TypeScript](TypeScript.md). Also, I'm interesting in writing tests, using code generators and some cool command-line tools.
 
-Besides programming stuff, I like writing itself, reading weird articles, mechanical keyboards (I'm typing this text on [Vortex Race III RGB](Vortex%20Race%20III%20RGB.md) with Cherry MX Blue switches), keeping all information that I used somehow in life and taking notes - I do note-taking using [Zettelkasten method](Zettelkasten%20method.md).
+Besides programming stuff, I like writing itself, reading weird articles, mechanical keyboards, keeping all information that I used somehow in life and taking notes - I do note-taking using [Zettelkasten method](Zettelkasten%20method.md).
 
 I find the way of learn in public is quite useful so here is my [Digital Garden](/notes).
 

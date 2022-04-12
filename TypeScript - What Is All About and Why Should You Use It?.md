@@ -4,6 +4,7 @@ aliases:
   - /blog/article/typescript-what-is-all-about-and-why-should-you-use-it
 date: "2021-05-08 19:50:00"
 image: images/typescript-what-is-all-about-and-why-should-you-use-it.png
+images: ['images/typescript-what-is-all-about-and-why-should-you-use-it.png']
 imageCopyright: eberhard grossgasteiger
 imageCopyrightUrl: "https://www.pexels.com/@eberhardgross"
 title: TypeScript - What Is All About and Why Should You Use It?

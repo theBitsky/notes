@@ -4,6 +4,7 @@ aliases:
   - /blog/article/setup-simple-workflow-to-write-node-typeScript-application-in-live-reload
 date: "2021-05-12 22:10:00"
 image: images/setup-simple-workflow-to-write-node-typeScript-application-in-live-reload.png
+images: ['images/setup-simple-workflow-to-write-node-typeScript-application-in-live-reload.png']
 imageCopyright: Negative Space
 imageCopyrightUrl: "https://www.pexels.com/@negativespace"
 title: "Setup Simple Workflow To Write Node TypeScript Application In Live Reload (Nodemon, ts-node)"
