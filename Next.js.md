@@ -15,7 +15,7 @@ Next.js is a [React](React.md) full stack framework. It provides an ability to d
 
 ## Creating a Next.js application (with TypeScript)
 
-For creating a Next.js application you need install [Node](Node.md) and [npm](npm.md) on your machine. if you didn't do it before check out the post [How To Install or Update Node by Using nvm (Node Version Manager)](https://byte.ski/blog/article/how-to-install-or-update-node-by-using-nvm).
+For creating a Next.js application you need install [Node](Node.md) and [npm](npm.md) on your machine. if you didn't do it before check out the post [How To Install or Update Node by Using nvm (Node Version Manager)](https://kovalevski.net/blog/article/how-to-install-or-update-node-by-using-nvm).
 
 **Next.js** provides a special tool called **create-next-app** that creates a boilerplate code and configuration for new app. It is similar to [create-react-app](create-react-app.md) but for **Next.js** applications.
 

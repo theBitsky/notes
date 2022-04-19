@@ -7,8 +7,8 @@ date: 2021-10-01
 image: "https://source.unsplash.com/random"
 tags: []
 keywords: []
-imageCopyright: Byteski
-imageCopyrightUrl: "https://byte.ski"
+imageCopyright: Max
+imageCopyrightUrl: "https://kovalevski.net"
 ---
 
 # empty

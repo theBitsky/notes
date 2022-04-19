@@ -9,7 +9,7 @@ public: false
 
 Hello! Welcome to my subreddit. 
 
-I am Byteski, a software developer based in 🇪🇺 Europe.
+I am Max, a software developer based in 🇪🇺 Europe.
 
 Besides working as a developer I write a blog about programming in general, TypeScript, Node, vim/neovim, and other stuff. 
 

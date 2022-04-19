@@ -9,8 +9,8 @@ keywords:
   - empty
 type: blog
 public: false
-imageCopyright: Byteski
-imageCopyrightUrl: "https://byte.ski"
+imageCopyright: Max
+imageCopyrightUrl: "https://kovalevski.net"
 ---
 
 # empty

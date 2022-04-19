@@ -19,7 +19,7 @@ A static-site generator written in [Golang](Golang.md).
 
 ## Resources
 
-* [byteski/hugo-blog-sample](https://github.com/byteski/hugo-blog-sample)
+* [byteski/hugo-blog-sample](https://github.com/maxkovalevski/hugo-blog-sample)
 
 ## Installing
 

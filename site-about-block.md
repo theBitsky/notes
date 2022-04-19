@@ -3,7 +3,7 @@ tags:
   - site
 ---
 
-Hello there! I am Byteski.
+Hello there! I am Max.
 
 I am a software developer, currently working mostly with TypeScript, React and Node ecosystems.
 

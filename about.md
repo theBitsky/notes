@@ -7,7 +7,7 @@ title: "About me"
 
 # About me
 
-### I'm Byteski, a software developer.
+### I'm Max Kovalevski, a software developer.
 
 ![photo](/images/avatar.jpg)
 
@@ -21,17 +21,15 @@ I'm fun of static type checkers and languages, especially [TypeScript](TypeScrip
 
 Besides programming stuff, I like writing itself, reading weird articles, mechanical keyboards, keeping all information that I used somehow in life and taking notes - I do note-taking using [Zettelkasten method](Zettelkasten%20method.md).
 
-I find the way of learn in public is quite useful so here is my [Digital Garden](/notes).
+I find the way of learn in public is quite useful so here is my [Digital Garden](https://kovalevski.net/notes).
 
-If you wanna just chat with me - feel free to email me at [me@byte.ski](mailto:me@byte.ski).
+If you wanna just chat with me - feel free to email me at [me@kovalevski.net](mailto:me@kovalevski.net).
 
 ### My links
 
-* [GitHub](https://github.com/byteski)
-* [Twitter](https://twitter.com/byteski)
-* [Reddit](https://www.reddit.com/user/thebyteski)
+* [GitHub](https://github.com/maxkovalevski)
+* [Twitter](https://twitter.com/maxkovalevski)
 * [Dev.to](https://dev.to/byteski)
-* [HN](https://news.ycombinator.com/user?id=byteski)
-* [Patreon](https://www.patreon.com/byteski)
-* [Open Collective](https://opencollective.com/byteski)
-* [IndieHackers](https://www.indiehackers.com/byteski)
+* [HN](https://news.ycombinator.com/user?id=kovalevski)
+- [Instagram](https://www.instagram.com/kovalevskimax)
+- 
