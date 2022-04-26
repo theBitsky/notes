@@ -1,5 +1,4 @@
 ---
-slug: ""
 date: "2022-04-26 14:43:10"
 title: "Some new blog post"
 tags: ['blog', 'new']
