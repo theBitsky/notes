@@ -67,6 +67,8 @@ Now, if you type `nvm --version` you should see a version of [Node Version Manag
 
 Now it's time to start using [Node Version Manager](Node%20Version%20Manager.md) to install [Node](Node.md) on the local machine.
 
+{{< subscription >}}
+
 To install **latest** version of Node you can use the command:
 
 ````

@@ -124,6 +124,8 @@ Version 4.2.4
 
 It means that [TypeScript](TypeScript.md) was successfully installed on our machine. What is **tsc** command? It is a **TypeScript compiler**. As mentioned in the [previous post](https://kovalevski.net/blog/article/how-to-install-or-update-node-by-using-nvm), TypeScript compiler is a tool, or program, that turns the TypeScript code into JavaScript code. We need this feature because we will execute this compiled JavaScript code by [Node](Node.md).
 
+{{< subscription >}}
+
 ### From JavaScript to TypeScript
 
 Alright. To solve the problem we need to write the same code as before but in TypeScript. Let's change extension of the JavaScript file **sum.js** to TypeScript file extension - **.ts**. Just rename the file from **sum.js** to **sum.ts** and let's see that we will have it in the editor.

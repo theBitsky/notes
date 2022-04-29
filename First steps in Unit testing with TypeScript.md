@@ -144,6 +144,8 @@ End-to-End (or e2e for short) tests are used to test software as a whole system 
 
 The result of these tests should be *correct* behavior of the application's UI. E2E emulates user's interaction with your application. These tests don't know how the system *actually* works inside.
 
+{{< subscription >}}
+
 Technologies that can be used for writing End-to-End test in [TypeScript](TypeScript.md)/[JavaScript](JavaScript.md) ecosystem are:
 
 * [Puppeteer](Puppeteer.md)

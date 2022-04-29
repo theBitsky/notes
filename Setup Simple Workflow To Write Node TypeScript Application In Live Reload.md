@@ -79,6 +79,8 @@ Now let's try to compile this file by using the TypeScript compiler:
 tsc main.ts
 ````
 
+{{< subscription >}}
+
 As you may have noticed TypeScript tells us that we need to install Type Declaration for modules of [Node](Node.md) that we use - **readline** and **util**. If you are not familiar with Type Declarations check out the post [What Are Type Declaration Files In TypeScript?](https://kovalevski.net/blog/article/what-are-type-declaration-files-in-typescript). For now, let's just install these Type Declarations by [npm](npm.md):
 
 ````

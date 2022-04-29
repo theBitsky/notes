@@ -22,7 +22,7 @@ public: true
 
 In the post [Getting Started With TypeScript Compiler (tsc)](https://kovalevski.net/blog/article/getting-started-using-and-configuring-typescript-compiler) we started to use TypeScript compiler with a few options in a simple Node project. We used **tsc** command to compile our app with specific rules and in watch mode. It works but we can use much more options of TypeScript compiler. However, use it just like a command in the Terminal with a bunch of flags is not so comfortable. We can improve our workflow by using TypeScript configuration file - **tsconfig.json**. In this post, we will learn how to create this file and configure it.
 
-The project example will be the same as in the post [Getting Started With TypeScript Compiler (tsc)](https://kovalevski.net/blog/article/getting-started-using-and-configuring-typescript-compiler). It is also available on GitHub as repository [byteski/ts-node-sample](https://github.com/maxkovalevski/ts-node-sample). If you didn't make the project from previous post from scratch - just download the repository from GitHub or clone the repository by this git command:
+The project example will be the same as in the post [Getting Started With TypeScript Compiler (tsc)](https://kovalevski.net/blog/article/getting-started-using-and-configuring-typescript-compiler). It is also available on GitHub as repository [maxkovalevski/ts-node-sample](https://github.com/maxkovalevski/ts-node-sample). If you didn't make the project from previous post from scratch - just download the repository from GitHub or clone the repository by this git command:
 
 ````
 git clone https://github.com/maxkovalevski/ts-node-sample.git
@@ -91,6 +91,8 @@ Run the app just to make sure that everything works as before:
 ````
 node dist/main.js
 ````
+
+{{< subscription >}}
 
 ## module
 

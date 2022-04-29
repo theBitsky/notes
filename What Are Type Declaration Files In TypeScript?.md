@@ -81,6 +81,8 @@ export interface User {
 
 You can import this interface from module **users-list** in another module. However, sometimes we need to use this interface as a common thing between several modules. So, *exporting* interface from one of these modules is not an option. We need to create a special file where we can specify Interface User and use it in modules.
 
+{{< subscription >}}
+
 Create a file with name **typings.d.ts** and moved interface User from file **users-list.ts** into this new file:
 
 ````ts

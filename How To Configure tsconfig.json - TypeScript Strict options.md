@@ -316,6 +316,8 @@ async function main() {
 
 ### TypeScript Strict options in tsconfig.json: strictNullChecks and Exclamation mark
 
+{{< subscription >}}
+
 You can also use "!" in such a case when **you are sure** that found item or element exist. Let's see an example:
 
 ````ts

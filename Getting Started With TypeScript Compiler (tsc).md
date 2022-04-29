@@ -131,6 +131,8 @@ You should have noticed that there are also new files that we didn't create in o
 
 If you are worked with Node.js before you may noticed that we imported modules in **main.ts** by using `import smth from 'module'` ([ES Modules](ES%20Modules.md)) not `const smth = require('module')` ([CommonJS Modules](CommonJS%20Modules.md)). Of course, modern Node.js can work with ECMAScript modules. However, CommonJS Modules are still a general way to import and export modules in Node.
 
+{{< subscription >}}
+
 So, how does it works? The thing is that TypeScript by default compiles code that we wrote using ECMAScript modules into the JavaScript code with CommonJS Modules. Let's look into compiled files:
 
 **createQuestioner.js**:

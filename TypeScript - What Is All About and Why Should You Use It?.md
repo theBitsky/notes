@@ -99,6 +99,8 @@ And this is just a very simple synthetic example. What if we make mistake in a p
 
 You could say "but we found the error after all when we executed our code". Yes, we did. But this is just one file. If you have a large project you will waste a lot of time to find the error. [TypeScript](TypeScript.md) provides us an ability to find this kind of errors **before** executing the code.
 
+{{< subscription >}}
+
 Let's just write a few lines of code in an example with countries and prevent the error before executing the code:
 
 ````ts

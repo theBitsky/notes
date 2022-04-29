@@ -52,6 +52,8 @@ And this is an answer to the question "Should I use strict mode in TypeScript or
 
 Why strict mode in TypeScript can be enabled by several parameters? These parameters can be used in an existing project. You probably won't be able to set parameter **strict** to true in an existing project. But you can set some strict mode parameters to gradually rewrite your codebase following strict mode rules. For example, you can set the parameter **noImplicitAny** to **true** and rewrite your code to one that is following this rule (you should write a type of parameters in every function). You probably won't have time to rewrite all projects but you can improve specific parts of your code. Next time when you will have time to improve code quality you can set one more strict mode parameter (that suits your by time, number of changes in code, etc).
 
+{{< subscription >}}
+
 ## In Practice
 
 Let's look at the example. Here is the simple console app that asks a user to type its name and then if the user exists in a database (which is basically [JSON](JSON.md) file with an array of users) prints greetings in a terminal. The source of an example is available [here](https://github.com/maxkovalevski/ts-node-sample/tree/strict-mode-example). Just create a new TypeScript project and create a few files with the code presented below.
