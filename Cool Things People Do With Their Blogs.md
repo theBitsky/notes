@@ -6,7 +6,7 @@ keywords: []
 twitterTags: []
 linkedinTags: []
 type: "blog"
-public: true
+public: false
 ---
 
 # Cool Things People Do With Their Blogs 🔗
