@@ -2,7 +2,7 @@
 title: Saving Links to My Site With a Bookmarklet (timkadlec.com) 🔗
 date: "2022-05-03 14:56:59"
 tags: ['link', 'websites']
-public: true
+public: false
 ---
 
 # Saving Links to My Site With a Bookmarklet (timkadlec.com)
