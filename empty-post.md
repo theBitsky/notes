@@ -9,7 +9,7 @@ keywords:
 type: post
 public: false
 imageCopyright: byteski
-imageCopyrightUrl: "https://kovalevski.net"
+imageCopyrightUrl: "https://thebitsky.net"
 ---
 
 # empty

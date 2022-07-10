@@ -10,7 +10,7 @@ keywords:
 type: blog
 public: false
 imageCopyright: Max
-imageCopyrightUrl: "https://kovalevski.net"
+imageCopyrightUrl: "https://thebitsky.net"
 ---
 
 # empty

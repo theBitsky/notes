@@ -19,7 +19,7 @@ type: blog
 public: true
 ---
 
-From the previous post [TypeScript - What Is All About And Why Should You Use It?](https://kovalevski.net/blog/article/typescript-what-is-all-about-and-why-should-you-use-it) we know that TypeScript is a superset of JavaScript and programming language. But how can you use it? If you worked with JavaScript in Front End you know that your code is executing by [Web browser](Web%20browser.md). In Back End, your code is running by [Node](Node.md). What about TypeScript?
+From the previous post [TypeScript - What Is All About And Why Should You Use It?](https://thebitsky.net/blog/article/typescript-what-is-all-about-and-why-should-you-use-it) we know that TypeScript is a superset of JavaScript and programming language. But how can you use it? If you worked with JavaScript in Front End you know that your code is executing by [Web browser](Web%20browser.md). In Back End, your code is running by [Node](Node.md). What about TypeScript?
 
 The thing is that TypeScript is provided with a special program, tool - compiler. A compiler is a program that compiles (transforms) one code to another.
 
@@ -34,15 +34,15 @@ npm i -g typescript
 tsc --version
 ````
 
-TypeScript compiler has many flags and options to use in various types of projects. You can use it in Front End project with libraries like [React](React.md). In [Angular](Angular.md) it is already used inside Angular's toolchain. You can also use **tsc** in Back End development with [Node](Node.md). Here is the post about [How To Setup Node TypeScript Workflow](https://kovalevski.net/blog/article/setup-simple-workflow-to-write-node-typeScript-application-in-live-reload).
+TypeScript compiler has many flags and options to use in various types of projects. You can use it in Front End project with libraries like [React](React.md). In [Angular](Angular.md) it is already used inside Angular's toolchain. You can also use **tsc** in Back End development with [Node](Node.md). Here is the post about [How To Setup Node TypeScript Workflow](https://thebitsky.net/blog/article/setup-simple-workflow-to-write-node-typeScript-application-in-live-reload).
 
 In this post, we will explore how to use **tsc** with a few general options.
 
 ## Usage
 
-We will use **tsc** with a simple example. It is an [command-line interface](command-line%20interface.md) app that asks us to type our first name and username and then greetings us. It is a Node.js application and we will execute it by Node. If you didn't install Node or you have Node with a version that is lower than 15 on your local machine, check out the post [How To Install or Update Node by Using nvm (Node Version Manager)](https://kovalevski.net/blog/article/how-to-install-or-update-node-by-using-nvm).
+We will use **tsc** with a simple example. It is an [command-line interface](command-line%20interface.md) app that asks us to type our first name and username and then greetings us. It is a Node.js application and we will execute it by Node. If you didn't install Node or you have Node with a version that is lower than 15 on your local machine, check out the post [How To Install or Update Node by Using nvm (Node Version Manager)](https://thebitsky.net/blog/article/how-to-install-or-update-node-by-using-nvm).
 
-If you don't know how to run a TypeScript compiler, I recommend checking out the post [Detecting Errors Before Running Code With TypeScript](https://kovalevski.net/blog/article/detecting-errors-before-running-code-with-typescript). We will use pretty much the same example as in that post but with small differences.
+If you don't know how to run a TypeScript compiler, I recommend checking out the post [Detecting Errors Before Running Code With TypeScript](https://thebitsky.net/blog/article/detecting-errors-before-running-code-with-typescript). We will use pretty much the same example as in that post but with small differences.
 
 Let's create a folder called **tsc-intro** or whatever you want. First of all, create two helper modules (files) with the following code:
 
@@ -107,7 +107,7 @@ async function main() {
 main();
 ````
 
-Also, you need to install Type Declarations of Node as a dev dependency in your local project. If you don't know about Type Declarations, check about the post [What Are Type Declaration Files In TypeScript](https://kovalevski.net/blog/article/what-are-type-declaration-files-in-typescript).
+Also, you need to install Type Declarations of Node as a dev dependency in your local project. If you don't know about Type Declarations, check about the post [What Are Type Declaration Files In TypeScript](https://thebitsky.net/blog/article/what-are-type-declaration-files-in-typescript).
 
 ````
 npm install --save-dev @types/node
@@ -325,7 +325,7 @@ Most of the time, we need to quickly change something in the code and see the re
 tsc --module ESNext --outDir "./dist" --watch src/main.ts
 ````
 
-Using **watch mode** is not enough for developing Node.js application because we also need to re-run Node after changes in the code. Check out the post [How To Setup Simple Workflow To Write Node TypeScript Application In Live Reload](https://kovalevski.net/blog/article/setup-simple-workflow-to-write-node-typeScript-application-in-live-reload).
+Using **watch mode** is not enough for developing Node.js application because we also need to re-run Node after changes in the code. Check out the post [How To Setup Simple Workflow To Write Node TypeScript Application In Live Reload](https://thebitsky.net/blog/article/setup-simple-workflow-to-write-node-typeScript-application-in-live-reload).
 
 ## Checking code without compilation
 

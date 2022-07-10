@@ -25,7 +25,7 @@ Yarn provide a solution to manage [Monorepo](Monorepo.md) - Yarn Workspaces
 
 ---
 
-* Source: [yarn-workspaces-sample (GitHub)](https://github.com/maxkovalevski/yarn-workspaces-sample)
+* Source: [yarn-workspaces-sample (GitHub)](https://github.com/maxthebitsky/yarn-workspaces-sample)
 
 ---
 

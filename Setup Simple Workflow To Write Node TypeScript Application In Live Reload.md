@@ -29,7 +29,7 @@ First of all, you need to install TypeScript on your computer. Install it by [np
 npm i -g typescript
 ````
 
-I'm sure you already installed [Node](Node.md) on your computer but maybe you need to update your version. If so, check out the post about [How To Install or Update Node by Using nvm (Node Version Manager)](https://kovalevski.net/blog/article/how-to-install-or-update-node-by-using-nvm).
+I'm sure you already installed [Node](Node.md) on your computer but maybe you need to update your version. If so, check out the post about [How To Install or Update Node by Using nvm (Node Version Manager)](https://thebitsky.net/blog/article/how-to-install-or-update-node-by-using-nvm).
 
 Okay, now let's create a project's folder with name whatever you want (I name it as **node-ts-setup-example**). Open this folder in Terminal and your editor (I use [Visual Studio Code](Visual%20Studio%20Code.md)).
 
@@ -81,7 +81,7 @@ tsc main.ts
 
 {{< subscription >}}
 
-As you may have noticed TypeScript tells us that we need to install Type Declaration for modules of [Node](Node.md) that we use - **readline** and **util**. If you are not familiar with Type Declarations check out the post [What Are Type Declaration Files In TypeScript?](https://kovalevski.net/blog/article/what-are-type-declaration-files-in-typescript). For now, let's just install these Type Declarations by [npm](npm.md):
+As you may have noticed TypeScript tells us that we need to install Type Declaration for modules of [Node](Node.md) that we use - **readline** and **util**. If you are not familiar with Type Declarations check out the post [What Are Type Declaration Files In TypeScript?](https://thebitsky.net/blog/article/what-are-type-declaration-files-in-typescript). For now, let's just install these Type Declarations by [npm](npm.md):
 
 ````
 npm install --save-dev @types/node

@@ -474,6 +474,83 @@ func main() {
 		- packages are stored in subfolders in a module
 		- can be imported
 
+## Pascal Case vs Camel Case naming of variables
+
+- pascal case
+	- `var Greeting string = "Hello there!"`
+		- in Go it means that variable will be used also outside of the *package* where was declared
+- camel case
+	- `var greeting string = "Hello there!"`
+		- in Go it means that variable will be used only inside the same package as where it was declared
+
+An example:
+
+**camel case**
+
+*variables.go*
+
+```go
+package greeting
+
+var greetingText = "Hello there!"
+```
+
+*hello.go*
+
+```go
+package main
+
+import (
+	"fmt"
+	"new-module/greeting"
+)
+
+func main() {
+	// Error: greetingText not exported by package greeting
+	fmt.Println(greeting.GreetingText)
+}
+```
+
+**pascal case**
+
+*variables.go*
+
+```go
+package greeting
+
+var GreetingText = "Hello there!"
+```
+
+*hello.go*
+
+```go
+package main
+
+import (
+	"fmt"
+	"new-module/greeting"
+)
+
+func main() {
+	fmt.Println(greeting.GreetingText) // Hello there!
+}
+```
+
+## Constants
+
+Constant is like a variable but it cannot be reassigned. Constant will have the same value.
+
+```go
+func main() {
+	const COUNT = 10
+	
+	COUNT = 15 // Error: cannot assign to COUNT (untyped int constant 10)
+
+	fmt.Println(COUNT)
+}
+```
+
+
 ## Writing tests in Go
 
 - File should have name like "xxx_test.go"

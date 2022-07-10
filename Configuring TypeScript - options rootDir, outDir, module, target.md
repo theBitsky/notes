@@ -20,12 +20,12 @@ type: blog
 public: true
 ---
 
-In the post [Getting Started With TypeScript Compiler (tsc)](https://kovalevski.net/blog/article/getting-started-using-and-configuring-typescript-compiler) we started to use TypeScript compiler with a few options in a simple Node project. We used **tsc** command to compile our app with specific rules and in watch mode. It works but we can use much more options of TypeScript compiler. However, use it just like a command in the Terminal with a bunch of flags is not so comfortable. We can improve our workflow by using TypeScript configuration file - **tsconfig.json**. In this post, we will learn how to create this file and configure it.
+In the post [Getting Started With TypeScript Compiler (tsc)](https://thebitsky.net/blog/article/getting-started-using-and-configuring-typescript-compiler) we started to use TypeScript compiler with a few options in a simple Node project. We used **tsc** command to compile our app with specific rules and in watch mode. It works but we can use much more options of TypeScript compiler. However, use it just like a command in the Terminal with a bunch of flags is not so comfortable. We can improve our workflow by using TypeScript configuration file - **tsconfig.json**. In this post, we will learn how to create this file and configure it.
 
-The project example will be the same as in the post [Getting Started With TypeScript Compiler (tsc)](https://kovalevski.net/blog/article/getting-started-using-and-configuring-typescript-compiler). It is also available on GitHub as repository [maxkovalevski/ts-node-sample](https://github.com/maxkovalevski/ts-node-sample). If you didn't make the project from previous post from scratch - just download the repository from GitHub or clone the repository by this git command:
+The project example will be the same as in the post [Getting Started With TypeScript Compiler (tsc)](https://thebitsky.net/blog/article/getting-started-using-and-configuring-typescript-compiler). It is also available on GitHub as repository [maxthebitsky/ts-node-sample](https://github.com/maxthebitsky/ts-node-sample). If you didn't make the project from previous post from scratch - just download the repository from GitHub or clone the repository by this git command:
 
 ````
-git clone https://github.com/maxkovalevski/ts-node-sample.git
+git clone https://github.com/maxthebitsky/ts-node-sample.git
 ````
 
 ## Creating configuration file
@@ -96,7 +96,7 @@ node dist/main.js
 
 ## module
 
-We already know from the post [Getting Started With TypeScript Compiler (tsc)](https://kovalevski.net/blog/article/getting-started-using-and-configuring-typescript-compiler) that we can tell TypeScript to compile the code into JavaScript that uses [ES Modules](ES%20Modules.md) instead of [CommonJS Modules](CommonJS%20Modules.md). For that purpose we used the special option of **tsc**:
+We already know from the post [Getting Started With TypeScript Compiler (tsc)](https://thebitsky.net/blog/article/getting-started-using-and-configuring-typescript-compiler) that we can tell TypeScript to compile the code into JavaScript that uses [ES Modules](ES%20Modules.md) instead of [CommonJS Modules](CommonJS%20Modules.md). For that purpose we used the special option of **tsc**:
 
 ````
 tsc --module ESNext src/main.ts
