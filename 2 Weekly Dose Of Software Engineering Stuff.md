@@ -26,7 +26,7 @@ excerpt: Hello there! Here is a second edition of the newsletter _Weekly Dose Of
 
 
  > 
- > ❗️✉️ This post is a public version of the newsletter edition that was published 2 days ago. Sign up to [**Weekly Dose Of Software Engineering Stuff**](https://thebitsky.net/newsletter) to be among the first to receive the newsletter.
+ > ❗️✉️ This post is a public version of the newsletter edition that was published 2 days ago. Sign up to [**Weekly Dose Of Software Engineering Stuff**](https://maxkovalevsky.com/newsletter) to be among the first to receive the newsletter.
 
 Hello there!
 
@@ -34,7 +34,7 @@ Here is a second edition of the newsletter *Weekly Dose Of Software Engineering 
 
 ## Blog
 
-* Last week I published new post [How To Configure tsconfig.json: TypeScript Strict options](https://thebitsky.net/blog/article/how-to-configure-tsconfigjson-typescript-strict-options)
+* Last week I published new post [How To Configure tsconfig.json: TypeScript Strict options](https://maxkovalevsky.com/blog/article/how-to-configure-tsconfigjson-typescript-strict-options)
 
 ## Book
 

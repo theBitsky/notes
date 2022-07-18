@@ -21,14 +21,14 @@ public: true
 
 ## The problem
 
-In the [previous post](https://thebitsky.net/blog/article/typescript-what-is-all-about-and-why-should-you-use-it) we talked about what is [TypeScript](TypeScript.md) and why should we use that. Now it's time to go to practice.
+In the [previous post](https://maxkovalevsky.com/blog/article/typescript-what-is-all-about-and-why-should-you-use-it) we talked about what is [TypeScript](TypeScript.md) and why should we use that. Now it's time to go to practice.
 
 We need to know how to start using [TypeScript](TypeScript.md) in our [JavaScript](JavaScript.md) project. In examples of this post series, I will use mostly code that written in [Node](Node.md) environment. It won't be any specific code that is understandable for only developers who worked with [Node](Node.md) before. Because this material is about TypeScript I want to specify more on TypeScript itself.
 
 Okay, let's start with an introduction to our first example. Here we have a very simple command-line application that works on [Node](Node.md). This example consists of one file. Let name it **sum.js**. When we execute this file by Node it will ask two questions in the Terminal - a value of argument X and Y. After typing these values the app will print the result of *X + Y*.
 
  > 
- > An example of this code is written with [Node](Node.md). If Node is not installed on your machine, check out the post about [How To Install or Update Node by Using nvm (Node Version Manager)](https://thebitsky.net/blog/article/how-to-install-or-update-node-by-using-nvm).
+ > An example of this code is written with [Node](Node.md). If Node is not installed on your machine, check out the post about [How To Install or Update Node by Using nvm (Node Version Manager)](https://maxkovalevsky.com/blog/article/how-to-install-or-update-node-by-using-nvm).
 
 Look at the code:
 
@@ -122,7 +122,7 @@ It should print you something like this:
 Version 4.2.4
 ````
 
-It means that [TypeScript](TypeScript.md) was successfully installed on our machine. What is **tsc** command? It is a **TypeScript compiler**. As mentioned in the [previous post](https://thebitsky.net/blog/article/how-to-install-or-update-node-by-using-nvm), TypeScript compiler is a tool, or program, that turns the TypeScript code into JavaScript code. We need this feature because we will execute this compiled JavaScript code by [Node](Node.md).
+It means that [TypeScript](TypeScript.md) was successfully installed on our machine. What is **tsc** command? It is a **TypeScript compiler**. As mentioned in the [previous post](https://maxkovalevsky.com/blog/article/how-to-install-or-update-node-by-using-nvm), TypeScript compiler is a tool, or program, that turns the TypeScript code into JavaScript code. We need this feature because we will execute this compiled JavaScript code by [Node](Node.md).
 
 {{< subscription >}}
 

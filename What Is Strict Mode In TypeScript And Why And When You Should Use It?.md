@@ -56,10 +56,10 @@ Why strict mode in TypeScript can be enabled by several parameters? These parame
 
 ## In Practice
 
-Let's look at the example. Here is the simple console app that asks a user to type its name and then if the user exists in a database (which is basically [JSON](JSON.md) file with an array of users) prints greetings in a terminal. The source of an example is available [here](https://github.com/maxthebitsky/ts-node-sample/tree/strict-mode-example). Just create a new TypeScript project and create a few files with the code presented below.
+Let's look at the example. Here is the simple console app that asks a user to type its name and then if the user exists in a database (which is basically [JSON](JSON.md) file with an array of users) prints greetings in a terminal. The source of an example is available [here](https://github.com/mkovalevsky/ts-node-sample/tree/strict-mode-example). Just create a new TypeScript project and create a few files with the code presented below.
 
 ````bash
-git clone https://github.com/maxthebitsky/ts-node-sample/tree/strict-mode-example
+git clone https://github.com/mkovalevsky/ts-node-sample/tree/strict-mode-example
 ````
 
 The app has three files or modules with functions. The entry point of the app is file **src/main.ts**:

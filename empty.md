@@ -8,7 +8,7 @@ image: "https://source.unsplash.com/random"
 tags: []
 keywords: []
 imageCopyright: Max
-imageCopyrightUrl: "https://thebitsky.net"
+imageCopyrightUrl: "https://maxkovalevsky.com"
 ---
 
 # empty

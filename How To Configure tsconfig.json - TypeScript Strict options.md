@@ -29,7 +29,7 @@ twitterTags: ["TypeScript", "SoftwareEngineer", "softwaredevelopment", "DEVCommu
 linkedinTags: ["TypeScript", "SoftwareEngineer", "softwaredevelopment", "DEVCommunity", "development", "javascript", "web", "nodejs", "webdevelopment", "howto"]
 ---
 
-TypeScript is not just a superset of JavaScript with static types. It is also a quite configurable tool that can be used for different types of projects. One parameter or group of parameters that can be configured is **strict**. If you are not familiar with strict mode and why you should use it for a new project then check out the post [What Is Strict Mode In TypeScript, Why And When You Should Use It?](https://thebitsky.net/blog/article/what-is-strict-mode-in-typescript-and-why-and-when-you-should-use-it). In this post I focus more on a practical side of this topic.
+TypeScript is not just a superset of JavaScript with static types. It is also a quite configurable tool that can be used for different types of projects. One parameter or group of parameters that can be configured is **strict**. If you are not familiar with strict mode and why you should use it for a new project then check out the post [What Is Strict Mode In TypeScript, Why And When You Should Use It?](https://maxkovalevsky.com/blog/article/what-is-strict-mode-in-typescript-and-why-and-when-you-should-use-it). In this post I focus more on a practical side of this topic.
 
 TypeScript's strict mode parameter can be configurated as several individual parameters for each specific case of type checking. So, basically, if you set the parameter **strict** to *true* in **tsconfig.json** it means that all these strict options are set to *true*.
 
@@ -168,7 +168,7 @@ You can avoid this error before executing the code by specifying the type of the
 ## TypeScript Strict options in tsconfig.json: strictNullChecks
 
  > 
- > Source code of this example is available on [GitHub](https://github.com/maxthebitsky/ts-node-sample/tree/strict-options-strict-null-checks)
+ > Source code of this example is available on [GitHub](https://github.com/mkovalevsky/ts-node-sample/tree/strict-options-strict-null-checks)
 
 This parameter obligates us to make a check of the variable existing. For example, let's say we have an array of some object. This data is available in a code of app from JSON file:
 
@@ -376,7 +376,7 @@ It tells TypeScript that we are totally sure that **foundItem** is not undefined
 ## TypeScript Strict options in tsconfig.json: strictBindCallApply
 
  > 
- > Source code of this example is available on [GitHub](https://github.com/maxthebitsky/ts-node-sample/tree/strict-options-strict-bind-call-apply)
+ > Source code of this example is available on [GitHub](https://github.com/mkovalevsky/ts-node-sample/tree/strict-options-strict-bind-call-apply)
 
 The next option is not so useful nowadays since we don't need to use **bind()** and related methods much often in modern JavaScript. But anyway, if you need to use bind(), call(), or apply() then this option might be useful for you.
 
